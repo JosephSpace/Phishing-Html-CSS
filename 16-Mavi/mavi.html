@@ -1,0 +1,1368 @@
+<!DOCTYPE html><html lang="tr"><head>
+	<base href="https://www.mavi.com/login"/><meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, initial-scale=1, user-scalable=no, shrink-to-fit=no"/><meta http-equiv="Content-Type" content="text/html"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta charset="utf-8"/>
+	<title>Giriş Yap | Mavi</title>
+	<meta name="referrer" content="no-referrer-when-downgrade"/><meta name="HandheldFriendly" content="true"/><meta name="description" content="Mavi şıklık ve ayrıcalıkları burada sizi bekliyor. Güvenli alışveriş ve kapıda ödeme ayrıcalıkları için hemen tıklayın!"/><meta name="robots" content="noindex"/>
+	<link href="https://www.mavi.com/login" rel="canonical"/><script type="text/javascript" src="https://bundles.efilli.com/mavi.com.prod.js" id="efilli"></script>
+	<link href="/_ui/responsive/theme-mavi/css/custompage.min.css?v=202404010533" media="all" rel="stylesheet" type="text/css"/>
+	<style type="text/css">@media(min-width: 640px){.choices__list--dropdown .choices__item--selectable{padding-right:0 !important;}}
+	</style>
+	<meta name="google" content="notranslate"/>
+	<link href="//sky-static.mavi.com/sys-master/maviTrImages/h58/h19/8945745100830/touch-icon-iphone.png" rel="apple-touch-icon"/>
+	<link href="//sky-static.mavi.com/sys-master/maviTrImages/h42/h15/8945745264670/touch-icon-ipad.png" rel="apple-touch-icon" sizes="152x152"/>
+	<link href="	//sky-static.mavi.com/sys-master/maviTrImages/hda/h11/8945745362974/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="180x180"/>
+	<link href="//sky-static.mavi.com/sys-master/maviTrImages/h71/h0e/8945745461278/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="167x167"/>
+	<link as="image" href="/medias/mavi-logo-orijinal-1011232200.svg?context=bWFzdGVyfG1hdmljZG5pbWFnZXN8MzQ4NHxpbWFnZS9zdmcreG1sfGFESm1MMmhoTkM4eE1ETXlNakE1TVRJM09ETTJOaTl0WVhacExXeHZaMjh0YjNKcGFtbHVZV3d0TVRBeE1USXpNakl3TUM1emRtY3w3YjQ1OTIxYTlhODIxZWNhYWI3MzQ2NWFkYzZhN2M5NzlmOTU5NGI1NTk1N2ViZTdjMTJiM2E1NTY4NmNmZmUw" rel="preload"/><!-- Google DataLayer --><script data-cookieconsent="ignore">
+    window.google_tag_params = { };
+
+	var currentPath = window.location.pathname;
+  var dataLayer = window.dataLayer || [];
+	var birthday = 'Thu May 12 00:00:00 TRST 2016';
+	var creationtime = 'Sun May 08 12:19:07 TRST 2016';
+    var phoneNumber = '';
+
+  function getCookie(key) {
+      var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+      return keyValue ? keyValue[2] : null;
+  }
+
+  var cookieID = getCookie('_ga');
+
+	function getMonth(monthStr){
+	   	return new Date(monthStr+'-1-01').getMonth()+1
+	}
+
+	function getFormattedDate(date){
+		if(isLogin() == 'Yes'){
+			var d = date.split(' ');
+			var month;
+			if (getMonth(d[1]) < 10){
+				month = '0' + getMonth(d[1]);
+			}else{
+				month = getMonth(d[1]);
+			}
+			var birthday = d[5] + '-' + month + '-' + d[2];
+			return birthday;
+		}
+		return '';
+	}
+
+	function isLogin(){
+		return (true) ? 'No' : 'Yes';
+	}
+
+    function detectmob() {
+      var device = '';
+      if( navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)
+      ){
+          return device= 'mobile';
+       }
+       else {
+          return device= 'web';
+       }
+    }
+
+    function  getFormattedPhoneNumber(phoneNumber) {
+        if(isLogin() == 'Yes'){
+            var phone = phoneNumber.startsWith('0') ? '+9' + phoneNumber : '+90' + phoneNumber;
+            return phone;
+        }
+        return '';
+    }
+
+	if (false) {
+        dataLayer.push({
+            leadsUserData: {
+                "sha256_email_address": "",
+                "sha256_phone_number": ""
+            }
+        })
+		if (localStorage.getItem('CD_UserID') != '8796093087748'){
+			localStorage.setItem('CD_Transaction_Count', 0);
+			localStorage.setItem('CD_Avg_Order_Value', 0.0);
+		}
+		dataLayer.push({
+
+            'uuid':'',
+            'returning' : true,
+            'CD_user_job': '',
+            'CD_userfavQty':'0',
+            'CD_cartQty':'0',
+            'CD_cartValue':'0.0',
+            'CD_Login': 'Yes',
+            'CD_SignupDate':getFormattedDate(creationtime),
+	        'CD_device': detectmob(),
+	        
+	        
+	          'CD_Kartus_user': 'Y'
+	        
+	        
+	        ,
+	        
+	        
+	          'CD_user_kartusValide': 'Y',
+	          'CD_user_kartusPoints': '0.0'
+	        
+	        
+	        ,
+            'has_transacted': (localStorage.getItem('CD_Transaction_Count')>0) ? true :false,
+	        'transaction_count': localStorage.getItem('CD_Transaction_Count'),
+			'CD_Avg_Order_Value': localStorage.getItem('CD_Avg_Order_Value'),
+            'CD_user_crmCustomerId': ''
+		});
+		
+
+
+
+
+
+	}
+	else{
+        dataLayer.push({
+            leadsUserData: {
+                "sha256_email_address": "",
+                "sha256_phone_number": ""
+            }
+        })
+		dataLayer.push({
+			'CD_VisitorID': cookieID,
+			'CD_Login': 'No'
+		});
+	}
+	localStorage.setItem('CD_UserID', '8796093087748');
+</script><!-- Google DataLayer --><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M8HWQW"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script data-cookieconsent="ignore">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M8HWQW');</script><!-- End Google Tag Manager -->
+</head>
+<body class="page-login pageType-ContentPage template-pages-LoginPageTemplate pageLabel-login smartedit-page-uid-login smartedit-page-uuid-eyJpdGVtSWQiOiJsb2dpbiIsImNhdGFsb2dJZCI6Im1hdmlDb250ZW50Q2F0YWxvZyIsImNhdGFsb2dWZXJzaW9uIjoiT25saW5lIn0= smartedit-catalog-version-uuid-maviContentCatalog/Online language-tr js-page- page-">
+<div class="yCmsContentSlot container"> </div>
+
+<header class="header js-header" id="header">
+<div class="container-mavi">
+<div class="header__container">
+<div class="header__brand"><a class="brand-logo" href="/"><img alt="Mavi" class="mavilogo " src="/medias/mavi-logo-orijinal-1011232200.svg?context=bWFzdGVyfG1hdmljZG5pbWFnZXN8MzQ4NHxpbWFnZS9zdmcreG1sfGFESm1MMmhoTkM4eE1ETXlNakE1TVRJM09ETTJOaTl0WVhacExXeHZaMjh0YjNKcGFtbHVZV3d0TVRBeE1USXpNakl3TUM1emRtY3w3YjQ1OTIxYTlhODIxZWNhYWI3MzQ2NWFkYzZhN2M5NzlmOTU5NGI1NTk1N2ViZTdjMTJiM2E1NTY4NmNmZmUw" title="Mavi"/> </a></div>
+
+<div class="header__campaign">
+<ul class="newsticker" style="overflow: hidden;">
+	<li class="yCmsComponent   "><a data-category-name="Kartuş’a üye ol 75 TL puan kazan" href="/kartus" id="Kartuş’a üye ol 75 TL puan kazan" rel="nofollow" title="Kartuş’a üye ol 75 TL puan kazan">Kartuş’a üye ol 75 TL puan kazan</a></li>
+	<li class="yCmsComponent   "><a data-category-name="Engelsiz iletişim" href="/engelsiz-iletisim" rel="nofollow" title="Engelsiz iletişim">Engelsiz iletişim</a></li>
+	<li class="yCmsComponent   "><a data-category-name="750 TL Üzeri Ücretsiz Kargo!" href="/kargo" rel="nofollow" title="750 TL Üzeri Ücretsiz Kargo!">750 TL Üzeri Ücretsiz Kargo!</a></li>
+	<li class="yCmsComponent   "><a data-category-name="Sipariş Sorgulama" href="/misafir/siparis-takibi" id="Sipariş Sorgulama" rel="nofollow" title="Sipariş Sorgulama">Sipariş Sorgulama</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="header__wrapper">
+<div class="container-mavi">
+<div class="header__wrapper__inner">
+<div class="header__wrapper__brand"><a class="brand-logo" href="/"><img alt="Mavi" class="mavilogo " src="/medias/mavi-logo-orijinal-1011232200.svg?context=bWFzdGVyfG1hdmljZG5pbWFnZXN8MzQ4NHxpbWFnZS9zdmcreG1sfGFESm1MMmhoTkM4eE1ETXlNakE1TVRJM09ETTJOaTl0WVhacExXeHZaMjh0YjNKcGFtbHVZV3d0TVRBeE1USXpNakl3TUM1emRtY3w3YjQ1OTIxYTlhODIxZWNhYWI3MzQ2NWFkYzZhN2M5NzlmOTU5NGI1NTk1N2ViZTdjMTJiM2E1NTY4NmNmZmUw" title="Mavi"/> </a></div>
+
+<div class="header__navbar">
+<nav class="header__navbar__container">
+<div class="header__navbar__mobile-header"><span class="close__menu"><svg class="icon-sprite-md"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#close-menu"></use> </svg> </span></div>
+
+<ul>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="Jean" href="{{.URL}}" title="Jean">Jean</a>
+
+	<div class="dropdown-menu js-dropdown-mega-menu size-option">
+	<div class="main-container">
+	<div class="dropdown-menu__inner">
+	<div class="dropdown-menu__content"><span class="dropdown-menu__main-title fontWeight500 " data-category-name="Kadın">Kadın</span>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Fit">Fit</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Straight / Düz Kesim" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Straight" rel="" title="Straight / Düz Kesim">Straight / Düz Kesim</a></li>
+		<li><a class="maviClass " data-category-name="Skinny" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Skinny" rel="" title="Skinny">Skinny</a></li>
+		<li><a class="maviClass " data-category-name="Flare-Bootcut / İspanyol-Çizme Paça" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Flare%20-%20Bootcut" rel="" title="Flare-Bootcut / İspanyol-Çizme Paça">Flare-Bootcut / İspanyol-Çizme Paça</a></li>
+		<li><a class="maviClass " data-category-name="Boyfriend" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Boyfriend" rel="" title="Boyfriend">Boyfriend</a></li>
+		<li><a class="maviClass " data-category-name="Mom" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Mom%20Jeans" rel="" title="Mom">Mom</a></li>
+		<li><a class="maviClass " data-category-name="Baggy" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Baggy" rel="" title="Baggy">Baggy</a></li>
+		<li><a class="maviClass " data-category-name="Slim Straight / Düz Dar Kesim " href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Slim%20Straight" rel="" title="Slim Straight / Düz Dar Kesim ">Slim Straight / Düz Dar Kesim </a></li>
+		<li><a class="maviClass " data-category-name="Wide Leg / Geniş Paça" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Wide%20Leg" rel="" title="Wide Leg / Geniş Paça">Wide Leg / Geniş Paça</a></li>
+		<li><a class="maviClass " data-category-name="Maternity / Hamile" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Hamile%20/%20Maternity" rel="" title="Maternity / Hamile">Maternity / Hamile</a></li>
+		<li><a class="maviClass " data-category-name="Curvy, Büyük Beden" href="/kadin/jean/c/1?q=:relevance:categoryValue:Jean:fit:Curvy,%20Büyük%20Beden" rel="" title="Curvy, Büyük Beden">Curvy, Büyük Beden</a></li>
+		<li><a class="maviClass textUnderline " data-category-name="Senin Fit&#39;in hangisi?" href="/kadin/jean/c/1" rel="" title="Senin Fit&#39;in hangisi?">Senin Fit&#39;in hangisi?</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Koleksiyonlar">Koleksiyonlar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Mavi Gold" href="/kadin/c/1?q=:relevance:categoryTheme:Mavi%20Gold" rel="" title="Mavi Gold">Mavi Gold</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Gold Shape" href="/kadin/c/1?q=:relevance:categoryTheme:Gold%20Shape" rel="" title="Mavi Gold Shape">Mavi Gold Shape</a></li>
+		<li><a class="maviClass " data-category-name="Classic Denim" href="/kadin/c/1?q=:relevance:categoryTheme:Classic%20Denim" rel="" title="Classic Denim">Classic Denim</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Premium" href="/kadin/c/1?q=:relevance:categoryTheme:Mavi%20Premium" rel="" title="Mavi Premium">Mavi Premium</a></li>
+		<li><a class="maviClass " data-category-name="Mavi All Blue" href="/kadin/c/1?q=:relevance:categoryTheme:All%20Blue" rel="" title="Mavi All Blue">Mavi All Blue</a></li>
+		<li><a class="maviClass " data-category-name="Premium Blue" href="/kadin/c/1?q=:relevance:categoryTheme:Premium%20Blue" rel="" title="Premium Blue">Premium Blue</a></li>
+		<li><a class="maviClass " data-category-name="Mavi College" href="/kadin/jean/c/1?q=:relevance:categoryTheme:Back%20to%20School:categoryValue:Jean" rel="" title="Mavi College">Mavi College</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Diğer Jean&#39;ler">Diğer Jean&#39;ler</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Ceket" href="/kadin/dis+giyim/denim/c/1" rel="" title="Ceket">Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/kadin/gomlek/denim/c/1" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Etek" href="/kadin/etek/denim/c/1" rel="" title="Etek">Etek</a></li>
+		<li><a class="maviClass " data-category-name="Elbise" href="/kadin/elbise/denim/c/1" rel="" title="Elbise">Elbise</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/kadin/sort/denim/c/1?q=:relevance:categoryValue:Şort:subCategoryValue:Denim" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass " data-category-name="Tulum" href="/kadin/c/1?q=:relevance:categoryValue:Salopet-Tulum:subCategoryValue:Denim" rel="" title="Tulum">Tulum</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content"><span class="dropdown-menu__main-title fontWeight500 " data-category-name="Erkek">Erkek</span>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Fit">Fit</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Tüm Jean&#39;ler" href="/erkek/jean/c/2" rel="" title="Tüm Jean&#39;ler">Tüm Jean&#39;ler</a></li>
+		<li><a class="maviClass " data-category-name="Skinny" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:fit:Skinny" rel="" title="Skinny">Skinny</a></li>
+		<li><a class="maviClass " data-category-name="Tapered" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:fit:Tapered" rel="" title="Tapered">Tapered</a></li>
+		<li><a class="maviClass " data-category-name="Slim Straight / Düz Dar Kesim" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:fit:Slim%20Straight" rel="" title="Slim Straight / Düz Dar Kesim">Slim Straight / Düz Dar Kesim</a></li>
+		<li><a class="maviClass " data-category-name="Regular Straight / Düz Rahat Kesim" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:fit:Regular%20Straight" rel="" title="Regular Straight / Düz Rahat Kesim">Regular Straight / Düz Rahat Kesim</a></li>
+		<li><a class="maviClass " data-category-name="Loose" href="/erkek/c/2?q=:relevance:categoryValue:Jean:fit:Loose" rel="" title="Loose">Loose</a></li>
+		<li><a class="maviClass " data-category-name="Comfort, Plus" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:fit:Comfort,%20Plus" rel="" title="Comfort, Plus">Comfort, Plus</a></li>
+		<li><a class="maviClass textUnderline " data-category-name="Senin Fit&#39;in hangisi?" href="/erkek/jean/c/2" rel="" title="Senin Fit&#39;in hangisi?">Senin Fit&#39;in hangisi?</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Koleksiyonlar">Koleksiyonlar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Mavi Black" href="/erkek/c/2?q=:relevance:categoryTheme:Mavi%20Black" rel="" title="Mavi Black">Mavi Black</a></li>
+		<li><a class="maviClass " data-category-name="Classic Denim" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:categoryTheme:Classic%20Denim" rel="" title="Classic Denim">Classic Denim</a></li>
+		<li><a class="maviClass " data-category-name="Lux Black" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:categoryTheme:Lux%20Black" rel="" title="Lux Black">Lux Black</a></li>
+		<li><a class="maviClass " data-category-name="Premium Blue" href="/erkek/c/2?q=:relevance:categoryTheme:Premium%20Blue" rel="" title="Premium Blue">Premium Blue</a></li>
+		<li><a class="maviClass " data-category-name="Mavi All Blue" href="/erkek/c/2?q=:relevance:categoryTheme:All%20Blue" rel="" title="Mavi All Blue">Mavi All Blue</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Pro" href="/erkek/c/2?q=:relevance:categoryValue:Jean:categoryTheme:Mavi%20Pro%20Koleksiyonu" rel="" title="Mavi Pro">Mavi Pro</a></li>
+		<li><a class="maviClass " data-category-name="Street" href="/erkek/jean/c/2?q=:relevance:categoryValue:Jean:categoryTheme:Street" rel="" title="Street">Street</a></li>
+		<li><a class="maviClass " data-category-name="Mavi College" href="/erkek/jean/c/2?q=:relevance:categoryTheme:Back%20to%20School:categoryValue:Jean" rel="" title="Mavi College">Mavi College</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Diğer Jean&#39;ler">Diğer Jean&#39;ler</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/erkek/gomlek/denim/c/2" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Ceket" href="/erkek/dis+giyim/denim/c/2" rel="" title="Ceket">Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/erkek/sort/denim/c/2" rel="" title="Şort">Şort</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__imaged-content right-content">
+	<ul>
+		<li><a class="dropdown-menu__image-title imgArea " data-category-name="" href="/jeanguide" title=""><img alt="" data-src="//sky-static.mavi.com/jean150224.jpg" height="1632" title="" width="960"/> </a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="Kadın" href="{{.URL}}" title="Kadın">Kadın</a>
+	<div class="dropdown-menu js-dropdown-mega-menu size-option">
+	<div class="main-container">
+	<div class="dropdown-menu__inner">
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Öne Çıkanlar">Öne Çıkanlar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Yeni Sezon" href="/kadin/c/1?q=:relevance:categoryTheme:Yeni%20Sezon" rel="" title="Yeni Sezon">Yeni Sezon</a></li>
+		<li><a class="maviClass " data-category-name="En Yeni" href="/kadin/c/1?q=:relevance:categoryTheme:En%20Yeni" rel="" title="En Yeni">En Yeni</a></li>
+		<li><a class="maviClass fontWeight500 " data-category-name="Sadece Online&#39;da" href="/kadin/c/1?q=:relevance:categoryTheme:Sadece%20Onlineda" rel="" title="Sadece Online&#39;da">Sadece Online&#39;da</a></li>
+		<li><a class="maviClass " data-category-name="Wunder X Mavi" href="/tum-urunler/c/0?q=:relevance:categoryTheme:Wunder%20X%20Mavi" rel="" title="Wunder X Mavi">Wunder X Mavi</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Koleksiyonlar">Koleksiyonlar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Mavi Logo" href="/kadin/c/1?q=:relevance:categoryTheme:Mavi+Logo" rel="" title="Mavi Logo">Mavi Logo</a></li>
+		<li><a class="maviClass " data-category-name="Miav Koleksiyonu" href="/kadin/c/1?q=:relevance:categoryTheme:Miav" rel="" title="Miav Koleksiyonu">Miav Koleksiyonu</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Lux Touch" href="/kadin/c/1?q=:relevance:categoryTheme:Lux%20Touch" rel="" title="Mavi Lux Touch">Mavi Lux Touch</a></li>
+		<li><a class="maviClass " data-category-name="Mavi All Blue" href="/kadin/c/1?q=:relevance:categoryTheme:All%20Blue" rel="" title="Mavi All Blue">Mavi All Blue</a></li>
+		<li><a class="maviClass " data-category-name="Mavi X Smiley Originals" href="/kadin/c/1?q=:relevance:categoryTheme:Mavi%20X%20Smiley%20Originals" rel="" title="Mavi X Smiley Originals">Mavi X Smiley Originals</a></li>
+		<li><a class="maviClass " data-category-name="Lisanslı Ürünler" href="/kadin/c/1?q=:relevance:categoryTheme:Lisanslı%20Ürünler" rel="" title="Lisanslı Ürünler">Lisanslı Ürünler</a></li>
+		<li><a class="maviClass " data-category-name="İndigo Turtles" href="/tum-urunler/c/0?q=:relevance:categoryTheme:Indigo%20Turtles" rel="" title="İndigo Turtles">İndigo Turtles</a></li>
+		<li><a class="maviClass " data-category-name="Mavi X S.E.M.T." href="/tum-urunler/c/0?q=:relevance:categoryTheme:Mavi%20x%20Semt" rel="" title="Mavi X S.E.M.T.">Mavi X S.E.M.T.</a></li>
+		<li><a class="maviClass " data-category-name="Keten" href="/kadin/c/1?q=:relevance:categoryTheme:Keten" rel="" title="Keten">Keten</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Jean">Jean</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Tüm Jean&#39;ler" href="/kadin/jean/c/1" rel="" title="Tüm Jean&#39;ler">Tüm Jean&#39;ler</a></li>
+		<li><a class="maviClass " data-category-name="Yeni Jean&#39;ler" href="/kadin/jean/c/1?q=:relevance:categoryTheme:En%20Yeni:categoryValue:Jean" rel="" title="Yeni Jean&#39;ler">Yeni Jean&#39;ler</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/kadin/gomlek/denim/c/1" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Ceket" href="/kadin/dis+giyim/denim/c/1" rel="" title="Ceket">Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Etek - Elbise" href="/kadin/c/1?q=:relevance:categoryValue:Elbise:categoryValue:Etek:subCategoryValue:Denim" rel="" title="Etek - Elbise">Etek - Elbise</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/kadin/sort/denim/c/1" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass textUnderline " data-category-name="Senin Fit&#39;in hangisi?" href="/kadin/jean/c/1" rel="" title="Senin Fit&#39;in hangisi?">Senin Fit&#39;in hangisi?</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Giyim">Giyim</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/kadin/jean/c/1" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/kadin/sweatshirt/c/1" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Eşofman Altı" href="/kadin/esofman+alti/c/1" rel="" title="Eşofman Altı">Eşofman Altı</a></li>
+		<li><a class="maviClass " data-category-name="Kazak" href="/kadin/triko/c/1" rel="" title="Kazak">Kazak</a></li>
+		<li><a class="maviClass " data-category-name="Hırka" href="/kadin/triko/hirka/c/1" rel="" title="Hırka">Hırka</a></li>
+		<li><a class="maviClass " data-category-name="Dış Giyim" href="/kadin/dis+giyim/c/1" rel="" title="Dış Giyim">Dış Giyim</a></li>
+		<li><a class="maviClass " data-category-name="Pantolon" href="/kadin/pantolon/c/1" rel="" title="Pantolon">Pantolon</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/kadin/gomlek/c/1" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Bluz - Top" href="/kadin/bluz/c/1" rel="" title="Bluz - Top">Bluz - Top</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/kadin/tisort/c/1" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Basic" href="/kadin/tisort/basic/c/1" rel="" title="Basic">Basic</a></li>
+		<li><a class="maviClass " data-category-name="İkili Setler" href="/kadin/c/1?q=:relevance:otherInfo:set-urunler" rel="" title="İkili Setler">İkili Setler</a></li>
+		<li><a class="maviClass " data-category-name="Yelek" href="/kadin/dis+giyim/yelek/c/1?q=:relevance:categoryValue:Dış%20Giyim:subCategoryValue:Yelek" rel="" title="Yelek">Yelek</a></li>
+		<li><a class="maviClass " data-category-name="Elbise - Etek" href="/kadin/c/1?q=:relevance:categoryValue:Elbise:categoryValue:Etek" rel="" title="Elbise - Etek">Elbise - Etek</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/kadin/sort/c/1" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Kadın Ürünleri" href="/kadin/c/1" rel="" title="Tüm Kadın Ürünleri">Tüm Kadın Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Dış Giyim">Dış Giyim</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Şişme Mont" href="/kadin/dis+giyim/sisme+mont/c/1" rel="" title="Şişme Mont">Şişme Mont</a></li>
+		<li><a class="maviClass " data-category-name="Mont - Kaban" href="/kadin/dis+giyim/c/1?q=:relevance:categoryValue:Dış%20Giyim:subCategoryValue:Kaban:subCategoryValue:Mont" rel="" title="Mont - Kaban">Mont - Kaban</a></li>
+		<li><a class="maviClass " data-category-name="Parka" href="/kadin/dis+giyim/parka/c/1" rel="" title="Parka">Parka</a></li>
+		<li><a class="maviClass " data-category-name="Trençkot" href="/kadin/dis+giyim/trenckot/c/1" rel="" title="Trençkot">Trençkot</a></li>
+		<li><a class="maviClass " data-category-name="Blazer" href="/kadin/dis+giyim/blazer/c/1" rel="" title="Blazer">Blazer</a></li>
+		<li><a class="maviClass " data-category-name="Biker Ceket" href="/kadin/dis+giyim/biker+ceket/c/1" rel="" title="Biker Ceket">Biker Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Bomber Ceket" href="/kadin/dis+giyim/bomber/c/1" rel="" title="Bomber Ceket">Bomber Ceket</a></li>
+		<li><a class="maviClass " data-category-name="İnce Ceket" href="/kadin/dis+giyim/ceket/c/1" rel="" title="İnce Ceket">İnce Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Dış Giyim" href="/kadin/dis+giyim/c/1" rel="" title="Tüm Dış Giyim">Tüm Dış Giyim</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Kozmetik">Kozmetik</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Parfüm Büyük Boy" href="/kadin/c/1?q=:relevance:otherInfo:parfum" rel="" title="Parfüm Büyük Boy">Parfüm Büyük Boy</a></li>
+		<li><a class="maviClass " data-category-name="Parfüm Mini Boy" href="/kadin/c/1?q=:relevance:otherInfo:mini-parfum" rel="" title="Parfüm Mini Boy">Parfüm Mini Boy</a></li>
+		<li><a class="maviClass " data-category-name="Oje" href="/kadin/beauty/oje/c/1?q=:relevance:categoryValue:Beauty:subCategoryValue:Oje" rel="" title="Oje">Oje</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Kozmetik Ürünleri" href="/kadin/beauty/c/1" rel="" title="Tüm Kozmetik Ürünleri">Tüm Kozmetik Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Aksesuar">Aksesuar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Çanta" href="/kadin/canta/c/1" rel="" title="Çanta">Çanta</a></li>
+		<li><a class="maviClass " data-category-name="Çorap" href="/kadin/corap/c/1" rel="" title="Çorap">Çorap</a></li>
+		<li><a class="maviClass " data-category-name="Şal - Atkı" href="/kadin/aksesuar/sal-atki/c/1" rel="" title="Şal - Atkı">Şal - Atkı</a></li>
+		<li><a class="maviClass " data-category-name="Şapka" href="/kadin/aksesuar/sapka/c/1" rel="" title="Şapka">Şapka</a></li>
+		<li><a class="maviClass " data-category-name="Bandana" href="/kadin/aksesuar/bandana/c/1" rel="" title="Bandana">Bandana</a></li>
+		<li><a class="maviClass " data-category-name="Takı" href="/kadin/aksesuar/c/1?q=:relevance:categoryValue:Aksesuar:subCategoryValue:Küpe:subCategoryValue:Kolye:subCategoryValue:Bileklik:subCategoryValue:Yüzük:subCategoryValue:Halhal" rel="" title="Takı">Takı</a></li>
+		<li><a class="maviClass " data-category-name="Kemer" href="/kadin/kemer/c/1" rel="" title="Kemer">Kemer</a></li>
+		<li><a class="maviClass " data-category-name="Saç Aksesuarları" href="/kadin/aksesuar/sac+aksesuari/c/1?q=:relevance:categoryValue:Aksesuar:subCategoryValue:Saç%20Aksesuarı" rel="" title="Saç Aksesuarları">Saç Aksesuarları</a></li>
+		<li><a class="maviClass " data-category-name="Cüzdan" href="/kadin/cuzdan/c/1" rel="" title="Cüzdan">Cüzdan</a></li>
+		<li><a class="maviClass " data-category-name="Anahtarlık" href="/kadin/aksesuar/anahtarlik/c/1" rel="" title="Anahtarlık">Anahtarlık</a></li>
+		<li><a class="maviClass " data-category-name="Su Matarası" href="/tum-urunler/c/0?q=:relevance:subCategoryValue:Matara" rel="" title="Su Matarası">Su Matarası</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Aksesuarlar" href="/kadin/c/1?q=:relevance:categoryValue:Aksesuar:categoryValue:Beauty:categoryValue:Cüzdan:categoryValue:Kemer:categoryValue:Çanta:categoryValue:Çorap" rel="" title="Tüm Aksesuarlar">Tüm Aksesuarlar</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__imaged-content right-content">
+	<ul>
+		<li><a class="dropdown-menu__image-title imgArea " data-category-name="" href="/kadin/c/1?q=:relevance:categoryTheme:Yeni%20Sezon" title=""><img alt="" data-src="//sky-static.mavi.com/kadin150224.jpg" height="1632" title="" width="960"/> </a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="Erkek" href="{{.URL}}" title="Erkek">Erkek</a>
+	<div class="dropdown-menu js-dropdown-mega-menu size-option">
+	<div class="main-container">
+	<div class="dropdown-menu__inner">
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Öne Çıkanlar">Öne Çıkanlar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Yeni Sezon" href="/erkek/c/2?q=:relevance:categoryTheme:Yeni%20Sezon" rel="" title="Yeni Sezon">Yeni Sezon</a></li>
+		<li><a class="maviClass " data-category-name="En Yeni" href="/erkek/c/2?q=:relevance:categoryTheme:En%20Yeni" rel="" title="En Yeni">En Yeni</a></li>
+		<li><a class="maviClass fontWeight500 " data-category-name="Sadece Online&#39;da" href="/erkek/c/2?q=:relevance:categoryTheme:Sadece%20Onlineda" rel="" title="Sadece Online&#39;da">Sadece Online&#39;da</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Edition" href="/erkek/c/2?q=:relevance:categoryTheme:Mavi%20Edition" rel="" title="Mavi Edition">Mavi Edition</a></li>
+		<li><a class="maviClass " data-category-name="Wunder X Mavi" href="/tum-urunler/c/0?q=:relevance:categoryTheme:Wunder%20X%20Mavi" rel="" title="Wunder X Mavi">Wunder X Mavi</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Koleksiyonlar">Koleksiyonlar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Mavi Logo" href="/erkek/c/2?q=:relevance:categoryTheme:Mavi%20Logo" rel="" title="Mavi Logo">Mavi Logo</a></li>
+		<li><a class="maviClass " data-category-name="Miav Koleksiyonu" href="/erkek/c/2?q=:relevance:categoryTheme:Miav" rel="" title="Miav Koleksiyonu">Miav Koleksiyonu</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Black" href="/erkek/c/2?q=:relevance:categoryTheme:Mavi%20Black" rel="" title="Mavi Black">Mavi Black</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Pro" href="/erkek/c/2?q=:relevance:categoryTheme:Mavi%20Pro%20Koleksiyonu" rel="" title="Mavi Pro">Mavi Pro</a></li>
+		<li><a class="maviClass " data-category-name="MV91" href="/erkek/c/2?q=:relevance:categoryTheme:MV91" rel="" title="MV91">MV91</a></li>
+		<li><a class="maviClass " data-category-name="Mavi All Blue" href="/erkek/c/2?q=:relevance:categoryTheme:All%20Blue" rel="" title="Mavi All Blue">Mavi All Blue</a></li>
+		<li><a class="maviClass " data-category-name="Mavi X Smiley Originals" href="/erkek/c/2?q=:relevance:categoryTheme:Mavi%20X%20Smiley%20Originals" rel="" title="Mavi X Smiley Originals">Mavi X Smiley Originals</a></li>
+		<li><a class="maviClass " data-category-name="Lisanslı Ürünler" href="/erkek/c/2?q=:relevance:categoryTheme:Lisanslı%20Ürünler" rel="" title="Lisanslı Ürünler">Lisanslı Ürünler</a></li>
+		<li><a class="maviClass " data-category-name="Mavi X S.E.M.T." href="/tum-urunler/c/0?q=:relevance:categoryTheme:Mavi%20x%20Semt" rel="" title="Mavi X S.E.M.T.">Mavi X S.E.M.T.</a></li>
+		<li><a class="maviClass " data-category-name="Keten" href="/erkek/c/2?q=:relevance:categoryTheme:Keten" rel="" title="Keten">Keten</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Jean">Jean</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Tüm Jean&#39;ler" href="/erkek/jean/c/2" rel="" title="Tüm Jean&#39;ler">Tüm Jean&#39;ler</a></li>
+		<li><a class="maviClass " data-category-name="Yeni Jean&#39;ler" href="/erkek/jean/c/2?q=:relevance:categoryTheme:En%20Yeni:categoryValue:Jean" rel="" title="Yeni Jean&#39;ler">Yeni Jean&#39;ler</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/erkek/gomlek/denim/c/2" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Ceket" href="/erkek/dis+giyim/denim/c/2" rel="" title="Ceket">Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/erkek/sort/denim/c/2" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass textUnderline " data-category-name="Senin Fit&#39;in hangisi?" href="/erkek/jean/c/2" rel="" title="Senin Fit&#39;in hangisi?">Senin Fit&#39;in hangisi?</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Giyim">Giyim</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/erkek/jean/c/2" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/erkek/sweatshirt/c/2" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Eşofman Altı" href="/erkek/esofman+alti/c/2" rel="" title="Eşofman Altı">Eşofman Altı</a></li>
+		<li><a class="maviClass " data-category-name="Kazak" href="/erkek/triko/c/2" rel="" title="Kazak">Kazak</a></li>
+		<li><a class="maviClass " data-category-name="Hırka" href="/erkek/triko/hirka/c/2" rel="" title="Hırka">Hırka</a></li>
+		<li><a class="maviClass " data-category-name="Dış Giyim" href="/erkek/dis+giyim/c/2" rel="" title="Dış Giyim">Dış Giyim</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/erkek/gomlek/c/2" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Overshirt" href="/erkek/c/2?q=:relevance:otherInfo:overshirt" rel="" title="Overshirt">Overshirt</a></li>
+		<li><a class="maviClass " data-category-name="Pantolon" href="/erkek/pantolon/c/2" rel="" title="Pantolon">Pantolon</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/erkek/tisort/c/2" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Basic" href="/erkek/tisort/basic/c/2" rel="" title="Basic">Basic</a></li>
+		<li><a class="maviClass " data-category-name="İkili Setler" href="/erkek/c/2?q=:relevance:otherInfo:set-urunler" rel="" title="İkili Setler">İkili Setler</a></li>
+		<li><a class="maviClass " data-category-name="Polo" href="/erkek/tisort/polo/c/2" rel="" title="Polo">Polo</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/erkek/sort/c/2" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Erkek Ürünleri" href="/erkek/c/2" rel="" title="Tüm Erkek Ürünleri">Tüm Erkek Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Dış Giyim">Dış Giyim</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Şişme Mont" href="/erkek/dis+giyim/sisme+mont/c/2" rel="" title="Şişme Mont">Şişme Mont</a></li>
+		<li><a class="maviClass " data-category-name="Mont - Kaban" href="/erkek/dis+giyim/c/2?q=:relevance:categoryValue:Dış%20Giyim:subCategoryValue:Kaban:subCategoryValue:Mont" rel="" title="Mont - Kaban">Mont - Kaban</a></li>
+		<li><a class="maviClass " data-category-name="Şişme Yelek" href="/erkek/dis+giyim/sisme+yelek/c/2" rel="" title="Şişme Yelek">Şişme Yelek</a></li>
+		<li><a class="maviClass " data-category-name="Biker Ceket" href="/erkek/dis+giyim/biker+ceket/c/2?q=:relevance:categoryValue:Dış%20Giyim:subCategoryValue:Biker%20Ceket" rel="" title="Biker Ceket">Biker Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Bomber Ceket" href="/erkek/dis+giyim/bomber/c/2" rel="" title="Bomber Ceket">Bomber Ceket</a></li>
+		<li><a class="maviClass " data-category-name="İnce Ceket" href="/erkek/dis+giyim/ceket/c/2" rel="" title="İnce Ceket">İnce Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Dış Giyim" href="/erkek/dis+giyim/c/2" rel="" title="Tüm Dış Giyim">Tüm Dış Giyim</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Parfüm">Parfüm</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Parfüm Büyük Boy" href="/erkek/c/2?q=:relevance:otherInfo:parfum" rel="" title="Parfüm Büyük Boy">Parfüm Büyük Boy</a></li>
+		<li><a class="maviClass " data-category-name="Parfüm Mini Boy" href="/erkek/c/2?q=:relevance:otherInfo:mini-parfum" rel="" title="Parfüm Mini Boy">Parfüm Mini Boy</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Kozmetik Ürünleri" href="/erkek/beauty/parfum/c/2" rel="" title="Tüm Kozmetik Ürünleri">Tüm Kozmetik Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Aksesuar">Aksesuar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Boxer" href="/erkek/boxer/c/2" rel="" title="Boxer">Boxer</a></li>
+		<li><a class="maviClass " data-category-name="Çorap" href="/erkek/corap/c/2" rel="" title="Çorap">Çorap</a></li>
+		<li><a class="maviClass " data-category-name="Bere - Eldiven" href="/erkek/aksesuar/bere-eldiven/c/2?q=:relevance:categoryValue:Aksesuar:subCategoryValue:Bere-Eldiven" rel="" title="Bere - Eldiven">Bere - Eldiven</a></li>
+		<li><a class="maviClass " data-category-name="Çanta" href="/erkek/canta/c/2" rel="" title="Çanta">Çanta</a></li>
+		<li><a class="maviClass " data-category-name="Kemer" href="/erkek/kemer/c/2" rel="" title="Kemer">Kemer</a></li>
+		<li><a class="maviClass " data-category-name="Cüzdan" href="/erkek/cuzdan/c/2" rel="" title="Cüzdan">Cüzdan</a></li>
+		<li><a class="maviClass " data-category-name="Şapka" href="/erkek/aksesuar/sapka/c/2" rel="" title="Şapka">Şapka</a></li>
+		<li><a class="maviClass " data-category-name="Bileklik" href="/erkek/aksesuar/bileklik/c/2" rel="" title="Bileklik">Bileklik</a></li>
+		<li><a class="maviClass " data-category-name="Su Matarası" href="/erkek/aksesuar/matara/c/2?q=:relevance:categoryValue:Aksesuar:subCategoryValue:Matara" rel="" title="Su Matarası">Su Matarası</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Aksesuarlar" href="/erkek/c/2?q=:relevance:categoryValue:Aksesuar:categoryValue:Beauty:categoryValue:Boxer:categoryValue:Cüzdan:categoryValue:Kemer:categoryValue:Çanta:categoryValue:Çorap" rel="" title="Tüm Aksesuarlar">Tüm Aksesuarlar</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__imaged-content right-content">
+	<ul>
+		<li><a class="dropdown-menu__image-title imgArea " data-category-name="" href="/erkek/c/2?q=:relevance:categoryTheme:Yeni%20Sezon" title=""><img alt="" data-src="//sky-static.mavi.com/erkek15022024e.jpg" height="1632" title="" width="960"/> </a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="Çocuk" href="{{.URL}}" title="Çocuk">Çocuk</a>
+	<div class="dropdown-menu js-dropdown-mega-menu size-option">
+	<div class="main-container">
+	<div class="dropdown-menu__inner">
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Koleksiyonlar">Koleksiyonlar</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="En Yeni" href="/cocuk/c/3?q=:relevance:categoryTheme:En%20Yeni" rel="" title="En Yeni">En Yeni</a></li>
+		<li><a class="maviClass " data-category-name="Mavi x Smiley Originals" href="/cocuk/c/3?q=:relevance:categoryTheme:Mavi%20X%20Smiley%20Originals" rel="" title="Mavi x Smiley Originals">Mavi x Smiley Originals</a></li>
+		<li><a class="maviClass " data-category-name="Lisanslı Ürünler" href="/cocuk/c/3?q=:relevance:categoryTheme:Lisanslı%20Ürünler" rel="" title="Lisanslı Ürünler">Lisanslı Ürünler</a></li>
+		<li><a class="maviClass " data-category-name="Miav Koleksiyonu" href="/cocuk/c/3?q=:relevance:categoryTheme:Miav" rel="" title="Miav Koleksiyonu">Miav Koleksiyonu</a></li>
+		<li><a class="maviClass " data-category-name="Mavi Logo" href="/cocuk/c/3?q=:relevance:categoryTheme:Mavi%20Logo" rel="" title="Mavi Logo">Mavi Logo</a></li>
+		<li><a class="maviClass " data-category-name="Sadece Online&#39;da" href="/cocuk/c/3?q=:relevance:categoryTheme:Sadece%20Onlineda" rel="" title="Sadece Online&#39;da">Sadece Online&#39;da</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Kız Çocuk">Kız Çocuk</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/cocuk/jean/c/3?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Jean" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/cocuk/sweatshirt/c/3?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Sweatshirt" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/cocuk/gomlek/c/3?q=:relevance:gender:Kız%20Çocuk:categoryValue:Gömlek" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Eşofman Altı" href="/cocuk/esofman+alti/c/3?q=:relevance:gender:Kız%20Çocuk:categoryValue:Eşofman%20Altı" rel="" title="Eşofman Altı">Eşofman Altı</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/cocuk/sort/c/3?q=:relevance:gender:Kız%20Çocuk:categoryValue:Şort" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass " data-category-name="Tayt" href="/cocuk/tayt/c/3?q=:relevance:gender:Kız%20Çocuk:categoryValue:Tayt" rel="" title="Tayt">Tayt</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/cocuk/tisort/c/3?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Tişört" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Kız Çocuk Ürünleri" href="/cocuk/c/3?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk" rel="" title="Tüm Kız Çocuk Ürünleri">Tüm Kız Çocuk Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Erkek Çocuk">Erkek Çocuk</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/cocuk/jean/c/3?q=:relevance:gender:Erkek%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Jean" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/cocuk/sweatshirt/c/3?q=:relevance:gender:Erkek%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Sweatshirt" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Ceket" href="/cocuk/dis+giyim/c/3?q=:relevance:gender:Erkek%20Çocuk:categoryValue:Dış%20Giyim" rel="" title="Ceket">Ceket</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/cocuk/gomlek/c/3?q=:relevance:gender:Erkek%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Gömlek" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Eşofman Altı" href="/cocuk/esofman+alti/c/3?q=:relevance:gender:Erkek%20Çocuk:categoryValue:Eşofman%20Altı" rel="" title="Eşofman Altı">Eşofman Altı</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/cocuk/sort/c/3?q=:relevance:gender:Erkek%20Çocuk:categoryValue:Şort" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/cocuk/tisort/c/3?q=:relevance:gender:Erkek%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Tişört" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Erkek Çocuk Ürünleri" href="/cocuk/c/3?q=:relevance:gender:Erkek%20Çocuk:gender:Unisex%20Çocuk" rel="" title="Tüm Erkek Çocuk Ürünleri">Tüm Erkek Çocuk Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__imaged-content right-content">
+	<ul>
+		<li><a class="dropdown-menu__image-title imgArea " data-category-name="" href="/cocuk/c/3?q=:relevance:categoryTheme:Yeni%20Sezon" title=""><img alt="" data-src="//sky-static.mavi.com/sys-master/maviTrImages/h04/he4/10048004259870/nav-cocuk.jpg" height="1632" title="" width="960"/> </a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="All Blue" href="https://{{.URL}}" title="All Blue">All Blue</a>
+	<div class="dropdown-menu js-dropdown-mega-menu size-option">
+	<div class="main-container">
+	<div class="dropdown-menu__inner">
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading " data-category-name=""> </p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="All Blue Stratejisi" href="https://www.mavi.com/sustainability/all-blue.html" rel="" title="All Blue Stratejisi">All Blue Stratejisi</a></li>
+		<li><a class="maviClass " data-category-name="All Blue Koleksiyonu" href="https://www.mavi.com/sustainability/collections.html" rel="" title="All Blue Koleksiyonu">All Blue Koleksiyonu</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="Outlet" href="{{.URL}}" title="Outlet">Outlet</a>
+	<div class="dropdown-menu js-dropdown-mega-menu size-option">
+	<div class="main-container">
+	<div class="dropdown-menu__inner">
+	<div class="dropdown-menu__content"><span class="dropdown-menu__main-title " data-category-name="Kadın">Kadın</span>
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading " data-category-name=""> </p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/outlet/jean/c/4?q=:relevance:categoryValue:Jean:gender:Kadın" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/outlet/sweatshirt/c/4?q=:relevance:categoryValue:Sweatshirt:gender:Kadın" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Eşofman Altı" href="/outlet/esofman+alti/c/4?q=:relevance:categoryValue:Eşofman%20Altı:gender:Kadın" rel="" title="Eşofman Altı">Eşofman Altı</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/outlet/tisort/c/4?q=:relevance:categoryValue:Tişört:gender:Kadın" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Basic" href="/outlet/tisort/basic/c/4?q=:relevance:categoryValue:Tişört:gender:Kadın:subCategoryValue:Basic" rel="" title="Basic">Basic</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/outlet/gomlek/c/4?q=:relevance:categoryValue:Gömlek:gender:Kadın" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Bluz – Top" href="/outlet/bluz/c/4" rel="" title="Bluz – Top">Bluz – Top</a></li>
+		<li><a class="maviClass " data-category-name="Spor Giyim" href="/outlet/c/4?q=:relevance:gender:Kad%C4%B1n:categoryTheme:Mavi%20Active" rel="" title="Spor Giyim">Spor Giyim</a></li>
+		<li><a class="maviClass " data-category-name="Dış Giyim" href="/outlet/dis+giyim/c/4?q=:relevance:gender:Kadın:categoryValue:Dış%20Giyim" rel="" title="Dış Giyim">Dış Giyim</a></li>
+		<li><a class="maviClass " data-category-name="Pantolon" href="/outlet/pantolon/c/4?q=:relevance:gender:Kadın:categoryValue:Pantolon" rel="" title="Pantolon">Pantolon</a></li>
+		<li><a class="maviClass " data-category-name="Triko - Kazak" href="/outlet/triko/c/4?q=:relevance:categoryValue:Triko:gender:Kadın" rel="" title="Triko - Kazak">Triko - Kazak</a></li>
+		<li><a class="maviClass " data-category-name="Elbise - Etek " href="/outlet/c/4?q=:relevance:gender:Kadın:categoryValue:Elbise:categoryValue:Etek" rel="" title="Elbise - Etek ">Elbise - Etek </a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/outlet/sort/c/4?q=:relevance:gender:Kadın:categoryValue:Şort" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass " data-category-name="Plaj" href="/outlet/plaj/c/4?q=:relevance:categoryValue:Plaj:gender:Kadın" rel="" title="Plaj">Plaj</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Ürünler" href="/outlet/c/4?q=:relevance:gender:Kadın" rel="" title="Tüm Ürünler">Tüm Ürünler</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content"><span class="dropdown-menu__main-title " data-category-name="Aksesuar">Aksesuar</span>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading " data-category-name=""> </p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Çanta - Cüzdan" href="/outlet/c/4?q=:relevance:gender:Kadın:categoryValue:Cüzdan:categoryValue:Çanta" rel="" title="Çanta - Cüzdan">Çanta - Cüzdan</a></li>
+		<li><a class="maviClass " data-category-name="Kemer" href="/outlet/kemer/c/4?q=:relevance:gender:Kadın:categoryValue:Kemer" rel="" title="Kemer">Kemer</a></li>
+		<li><a class="maviClass " data-category-name="Çorap" href="/outlet/corap/c/4?q=:relevance:gender:Kadın:categoryValue:Çorap" rel="" title="Çorap">Çorap</a></li>
+		<li><a class="maviClass " data-category-name="Takı" href="/outlet/c/4?q=:relevance:gender:Kadın:categoryValue:Aksesuar:subCategoryValue:Yüzük:subCategoryValue:Küpe:subCategoryValue:Kolye:subCategoryValue:Bileklik" rel="" title="Takı">Takı</a></li>
+		<li><a class="maviClass " data-category-name="Saç Aksesuarları" href="/outlet/aksesuar/sac+aksesuari/c/4?q=:relevance:gender:Kadın:categoryValue:Aksesuar:subCategoryValue:Saç%20Aksesuarı" rel="" title="Saç Aksesuarları">Saç Aksesuarları</a></li>
+		<li><a class="maviClass " data-category-name="Şal - Atkı" href="/outlet/aksesuar/c/4?q=:relevance:gender:Kadın:categoryValue:Aksesuar:subCategoryValue:Şal-Atkı" rel="" title="Şal - Atkı">Şal - Atkı</a></li>
+		<li><a class="maviClass " data-category-name="Bere - Eldiven" href="/outlet/aksesuar/bere-eldiven/c/4?q=:relevance:gender:Kadın:categoryValue:Aksesuar:subCategoryValue:Bere-Eldiven" rel="" title="Bere - Eldiven">Bere - Eldiven</a></li>
+		<li><a class="maviClass " data-category-name="Şapka" href="/outlet/aksesuar/sapka/c/4?q=:relevance:gender:Kadın:categoryValue:Aksesuar:subCategoryValue:Şapka" rel="" title="Şapka">Şapka</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Aksesuarlar" href="/outlet/c/4?q=:relevance:gender:Kadın:categoryValue:Çanta:categoryValue:Aksesuar:categoryValue:Kemer:categoryValue:Çorap" rel="" title="Tüm Aksesuarlar">Tüm Aksesuarlar</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content"><span class="dropdown-menu__main-title " data-category-name="Erkek">Erkek</span>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading " data-category-name=""> </p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/outlet/jean/c/4?q=:relevance:categoryValue:Jean:gender:Erkek" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/outlet/sweatshirt/c/4?q=:relevance:gender:Erkek:categoryValue:Sweatshirt" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Eşofman Altı" href="/outlet/esofman+alti/c/4?q=:relevance:gender:Erkek:categoryValue:Eşofman Altı" rel="" title="Eşofman Altı">Eşofman Altı</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/outlet/tisort/c/4?q=:relevance:gender:Erkek:categoryValue:Tişört" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Basic" href="/outlet/tisort/basic/c/4?q=:relevance:gender:Erkek:categoryValue:Tişört:subCategoryValue:Basic" rel="" title="Basic">Basic</a></li>
+		<li><a class="maviClass " data-category-name="Polo" href="/outlet/tisort/polo/c/4?q=:relevance:gender:Erkek:categoryValue:Tişört:subCategoryValue:Polo" rel="" title="Polo">Polo</a></li>
+		<li><a class="maviClass " data-category-name="Gömlek" href="/outlet/gomlek/c/4?q=:relevance:gender:Erkek:categoryValue:Gömlek" rel="" title="Gömlek">Gömlek</a></li>
+		<li><a class="maviClass " data-category-name="Spor Giyim" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryTheme:Mavi%20Active" rel="" title="Spor Giyim">Spor Giyim</a></li>
+		<li><a class="maviClass " data-category-name="Dış Giyim" href="/outlet/dis+giyim/c/4?q=:relevance:gender:Erkek:categoryValue:Dış%20Giyim" rel="" title="Dış Giyim">Dış Giyim</a></li>
+		<li><a class="maviClass " data-category-name="Triko - Kazak" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Triko" rel="" title="Triko - Kazak">Triko - Kazak</a></li>
+		<li><a class="maviClass " data-category-name="Pantolon" href="/outlet/pantolon/c/4?q=:relevance:gender:Erkek:categoryValue:Pantolon" rel="" title="Pantolon">Pantolon</a></li>
+		<li><a class="maviClass " data-category-name="Şort" href="/outlet/sort/c/4?q=:relevance:gender:Erkek:categoryValue:Şort" rel="" title="Şort">Şort</a></li>
+		<li><a class="maviClass " data-category-name="Mayo Şort" href="/outlet/mayo+sort/c/4" rel="" title="Mayo Şort">Mayo Şort</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Ürünler" href="/outlet/c/4?q=:relevance:gender:Erkek" rel="" title="Tüm Ürünler">Tüm Ürünler</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content"><span class="dropdown-menu__main-title " data-category-name="Aksesuar">Aksesuar</span>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading " data-category-name=""> </p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Boxer" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Boxer" rel="" title="Boxer">Boxer</a></li>
+		<li><a class="maviClass " data-category-name="Çorap" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Çorap" rel="" title="Çorap">Çorap</a></li>
+		<li><a class="maviClass " data-category-name="Kemer" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Kemer" rel="" title="Kemer">Kemer</a></li>
+		<li><a class="maviClass " data-category-name="Çanta" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Çanta" rel="" title="Çanta">Çanta</a></li>
+		<li><a class="maviClass " data-category-name="Cüzdan" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Cüzdan" rel="" title="Cüzdan">Cüzdan</a></li>
+		<li><a class="maviClass " data-category-name="Şal - Atkı" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Aksesuar:subCategoryValue:Şal-Atkı" rel="" title="Şal - Atkı">Şal - Atkı</a></li>
+		<li><a class="maviClass " data-category-name="Bere - Eldiven" href="/outlet/aksesuar/bere-eldiven/c/4?q=:relevance:gender:Erkek:categoryValue:Aksesuar:subCategoryValue:Bere-Eldiven" rel="" title="Bere - Eldiven">Bere - Eldiven</a></li>
+		<li><a class="maviClass " data-category-name="Bileklik" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Aksesuar:subCategoryValue:Bileklik" rel="" title="Bileklik">Bileklik</a></li>
+		<li><a class="maviClass " data-category-name="Şapka" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Aksesuar:subCategoryValue:Şapka" rel="" title="Şapka">Şapka</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Aksesuarlar" href="/outlet/c/4?q=:relevance:gender:Erkek:categoryValue:Aksesuar:categoryValue:Boxer:categoryValue:Cüzdan:categoryValue:Kemer:categoryValue:Çanta:categoryValue:Çorap" rel="" title="Tüm Aksesuarlar">Tüm Aksesuarlar</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__content"><span class="dropdown-menu__main-title " data-category-name="Çocuk">Çocuk</span>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Kız Çocuk">Kız Çocuk</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/outlet/jean/c/4?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Jean" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/outlet/sweatshirt/c/4?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Sweatshirt" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/outlet/tisort/c/4?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Tişört" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Kız Çocuk Ürünleri" href="/outlet/c/4?q=:relevance:gender:Kız%20Çocuk:gender:Unisex%20Çocuk" rel="" title="Tüm Kız Çocuk Ürünleri">Tüm Kız Çocuk Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading fontWeight500 " data-category-name="Erkek Çocuk">Erkek Çocuk</p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Jean" href="/outlet/jean/c/4?q=:relevance:gender:Unisex%20Çocuk:gender:Erkek%20Çocuk:categoryValue:Jean" rel="" title="Jean">Jean</a></li>
+		<li><a class="maviClass " data-category-name="Sweatshirt" href="/outlet/sweatshirt/c/4?q=:relevance:gender:Erkek%20Çocuk:gender:Unisex%20Çocuk:categoryValue:Sweatshirt" rel="" title="Sweatshirt">Sweatshirt</a></li>
+		<li><a class="maviClass " data-category-name="Tişört" href="/outlet/tisort/c/4?q=:relevance:gender:Unisex%20Çocuk:gender:Erkek%20Çocuk:categoryValue:Tişört" rel="" title="Tişört">Tişört</a></li>
+		<li><a class="maviClass " data-category-name="Tüm Erkek Çocuk Ürünleri" href="/outlet/c/4?q=:relevance:gender:Erkek%20Çocuk:gender:Unisex%20Çocuk" rel="" title="Tüm Erkek Çocuk Ürünleri">Tüm Erkek Çocuk Ürünleri</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="Hediye Kartı" href="{{.URL}}" rel="nofollow" title="Hediye Kartı">Hediye Kartı</a>
+	<div class="dropdown-menu js-dropdown-mega-menu size-option">
+	<div class="main-container">
+	<div class="dropdown-menu__inner">
+	<div class="dropdown-menu__content">
+	<div class="dropdown-menu__list">
+	<div class="dropdown-menu__list-inner accordion js-accordion">
+	<p class="dropdown-menu__list__title accordion__item--heading " data-category-name=""> </p>
+
+	<ul>
+		<li><a class="maviClass " data-category-name="Hediye Kartı Sorgula" href="/hediye-karti-sorgula" rel="" title="Hediye Kartı Sorgula">Hediye Kartı Sorgula</a></li>
+		<li><a class="maviClass " data-category-name="Hediye Kartı Satın Al" href="/hediye-karti" rel="" title="Hediye Kartı Satın Al">Hediye Kartı Satın Al</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="drop-one js-menu-item"><a class="links header__navbar__links js-navbar-category" data-category-name="Kartuş" href="/kartus" rel="nofollow"><span class="text">Kartuş</span> </a></li>
+</ul>
+</nav>
+</div>
+
+<div class="header__menu">
+<ul class="header__menu__nav-list">
+	<li class="header__menu--search"><button aria-label="Arama Yap" class="header__menu--search-button" title="Arama Yap"><span class="header__menu--search-placeholder">Arama Yap</span> <span class="header__menu--search-logo"> <svg class="icon-sprite-md"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#search"></use> </svg> </span></button>
+
+	<div class="searchBox__overlay hiding">
+	<div class="searchBox__overlay__inner">
+	<div class="searchBox__overlay--menu"><a class="searchBox__overlay--menu-logo" href="/" title="Mavi"><img alt="Mavi" class="img1 mavilogo" src="/_ui/responsive/theme-mavi/images/logos/logo.svg" title="Mavi"/> </a><button aria-label="Geri Dön" class="goBack" title="Geri Dön"><svg class="icon-sprite-sm"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#path"></use> </svg></button> <span class="searchBox__overlay--menu-title">Arama</span> <a class="searchBox__overlay--menu-basket" href="#" rel="nofollow"> <svg class="icon-sprite-sm"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#basket"></use> </svg> </a></div>
+
+	<div class="inputBox"><button aria-label="Arama" class="inputBox__search-logo" title="Arama"><svg class="icon-sprite-md"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#search"></use> </svg></button>
+
+	<form action="" id="searchbox-form" method="get" name="search_form_SearchBox" style="width:100%"><input name="__original_url" type="hidden" value="https://www.mavi.com/login/search/"/> <input class="input input-search js-site-search-input" data-options="{&#34;autocompleteUrl&#34; : &#34;/search/autocomplete/SearchBox&#34;,&#34;minCharactersBeforeRequest&#34; :
+					&#34;3&#34;,&#34;waitTimeBeforeRequest&#34; : &#34;500&#34;,&#34;displayProductImages&#34; : true}" id="searchbox-input" maxlength="100" name="text" placeholder="Ne arıyorsun?" type="text" value=""/> </form>
+	<button aria-label="Temizle" class="inputBox__clear" title="Temizle" type="reset">Temizle</button><button aria-label="Kapat" class="inputBox__close" tabindex="0" title="Kapat"><svg class="icon-sprite-xs"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#close-menu"></use> </svg></button></div>
+
+	<div class="searchBox__overlay--contents">
+	<div class="searchBox__overlay--columns">
+	<div class="searchBox__overlay--columns-recent">
+	<div class="searchBox__overlay__heading">
+	<p class="searchBox__overlay__title">Son Arananlar</p>
+	<button aria-label="Tümünü Sil" class="searchBox__overlay--columns-allClear" title="Tümünü Sil">Tümünü Sil</button></div>
+
+	<div class="searches all-searches">
+	<ul>
+		<li><a href="#">Ceket</a> <span aria-hidden="false" aria-role="checkbox"> <svg class="icon-sprite-min"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#close-menu"></use> </svg> </span></li>
+		<li><a href="#">All Blue</a> <span aria-hidden="false" aria-role="checkbox"> <svg class="icon-sprite-min"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#close-menu"></use> </svg> </span></li>
+		<li><a href="#">Sweatshirt</a> <span aria-hidden="false" aria-role="checkbox"> <svg class="icon-sprite-min"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#close-menu"></use> </svg> </span></li>
+		<li><a href="#">Ceket</a> <span aria-hidden="false" aria-role="checkbox"> <svg class="icon-sprite-min"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#close-menu"></use> </svg> </span></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="searchBox__overlay--columns-popular">
+	<p class="searchBox__overlay__title">Popüler Aramalar</p>
+
+	<div class="searches">
+	<ul>
+		<li><a href="#">Ceket</a></li>
+		<li><a href="#">All Blue</a></li>
+		<li><a href="#">Sweatshirt</a></li>
+		<li><a href="#">Tshirt</a></li>
+		<li><a href="#">All Blue</a></li>
+		<li><a href="#">Sweatshirt</a></li>
+		<li><a href="#">Denim Ceket</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+	<div class="searchBox__overlay--cards swiper-container swiper-search-cards">
+	<div class="search-item-card swiper-wrapper"> </div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li class="header__menu--favorites"><a aria-label="Favorilerim" href="/my-account/wishlist/list" rel="nofollow" title="Favorilerim"><svg class="icon-sprite-md"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#favorites"></use> </svg> </a></li>
+	<li class="header__menu--profile"><a aria-label="Hesabım" href="/my-account/update-profile" rel="nofollow" title="Hesabım"><svg class="icon-sprite-md"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#user"></use> </svg> </a></li>
+	<li class="header__menu--basket basket--full js-basket-icon"><a aria-label="Sepetim" href="/cart" rel="nofollow" title="Sepetim"><svg class="icon-sprite-md"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#basket"></use> </svg> </a></li>
+	<li class="header__menu--burger"><button aria-label="Menu" title="Menu" type="button"><svg class="icon-sprite-md2"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#menu-2"></use> </svg></button></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="yCmsContentSlot">
+<div class="breadcrumb">
+<ul class="breadcrumb__list">
+	<li class="breadcrumb__list-item"><a href="{{.URL}}">Anasayfa</a></li>
+	<li class="breadcrumb__list-item">Giriş Yap</li>
+</ul>
+</div>
+</div>
+
+<p><a id="skip-to-content"></a></p>
+
+<main class="main" id="mainPageContent">
+<div class="global-alerts"><span class="alertProductAdd" style="display: none;">✓ Favorilere eklendi.</span> <span class="alertProductRemove" style="display: none;">✓ Favorilerden çıkarıldı.</span> <span class="alertProductStockError" style="display: none;">✓ Favoriye eklemek istediğiniz ürünün stoğu tükenmiştir.</span>
+
+<div class="alert alert-info alert-dismissable hide"> </div>
+
+<div class="alert alert-warning alert-dismissable hide"> </div>
+
+<div class="alert alert-danger alert-dismissable hide"> </div>
+</div>
+
+<div id="modal-forgot-password" style="display:none">
+<div class="modal-container modal-forgot-password">
+<div class="modal-header">
+<div class="title">Şifremi unuttum</div>
+<button aria-label="Kapat" class="modal-close" title="Kapat"><span class="icon"><svg class="icon-sprite-xs"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#close-menu"></use> </svg> </span></button></div>
+
+<div class="modal-content">
+<div class="forgot-password-content js-forgot-password">
+<div class="description">
+<p>Yeni şifrenizi yenileme linkini gönderebileceğimiz kayıtlı mail adresinizi yazınız.</p>
+</div>
+
+<div class="sent-description hidden" style="flex-direction:column;align-items:flex-start"><span class="icon"><span class="icon-img"><img alt="Mail Gönder" class="sent-email-icon" src="" title="Mail Gönder"/> </span> </span>
+
+<p class="sent-email-address"> </p>
+
+<div class="mt-15" style="font-size:.65rem;color:#000">*E-mail almada sorun yaşıyorsanız, girdiğiniz e-mail adresinin doğruluğundan emin olunuz.</div>
+</div>
+
+<div class="form">
+<div class="form-control js-eposta">
+<div class="form__group">
+<div class="form-control variant:line"><input class="form-input" name="email" placeholder="Şirket E-Posta Adresi" type="text"/></div>
+
+<div class="messages error-size-sm"> </div>
+</div>
+
+<div class="form__group">
+<div class="form-control variant:line mt-15 recaptcha-container" style="height:65px">
+<div class="password-reset-recaptcha" id="reset-password-recaptcha" style="transform:scale(0.8);transform-origin:0 0;width: 100% !important;"> </div>
+</div>
+
+<div class="messages error-size-sm"> </div>
+</div>
+</div>
+
+<div class="box-actions mt-15"><button class="button button-outline reset-password-send" disabled="disabled" type="button">Gönder</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="membership-page membership-sign-in center-page newSize">
+<div class="membership-page-inner">
+<div class="membership-form-area">
+<div class="membership-form-inner">
+<nav class="membership-navigation"><a class="active">Giriş Yap</a> <a href="{{.URL}}">Üye Ol</a></nav>
+<input name="showCaptcha" type="hidden" value="false"/>
+<form action="" class="membership-form js-form-validate" id="mainLoginForm" method="post"><input name="__original_url" type="hidden" value="https://www.mavi.com/login/j_spring_security_check"/>
+<div class="form-control">
+<div class="form__group">
+<div class="form-control variant:line"><input class="form-input" id="j_username" name="j_username" placeholder="Şirket E-Posta Adresi" tabindex="1" type="text" value=""/></div>
+
+<div class="messages"> </div>
+</div>
+</div>
+
+<div class="form-control password js-password">
+<div class="form__group">
+<div class="form-control variant:line"><input class="form-input" id="j_password" name="password" placeholder="Şifre" tabindex="2" type="password" value=""/></div>
+
+<div class="messages"> </div>
+</div>
+
+<div class="show-password js-show-password"><svg class="icon-sprite"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#eye"></use> </svg></div>
+</div>
+
+<div class="form-helper">
+<div class="remember-me">
+<div class="form__group">
+<div class="checkbox-radio variant:text size:large"> </div>
+
+<div class="messages"> </div>
+</div>
+</div>
+
+<div class="forget-password"><a href="#" id="forgotten-password">Şifremi Unuttum</a></div>
+</div>
+<a href="https://www.mavi.com/"> </a>
+
+<div class="box-actions"><button class="button button-outline bg-dark " id="login-submit" tabindex="4">Giriş Yap</button></div>
+<a href="https://www.mavi.com/"> </a></form>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<footer class="footer">
+<div class="container-mavi">
+<div class="footer__container">
+<div class="row">
+<div class="col-12">
+<div class="footer__contact">
+<ul>
+	<li><a class="footer__extras--contact--text" href="https://api.whatsapp.com/send/?phone=908502886284&amp;text=Merhaba&amp;app_absent=0" rel="nofollow" target="_blank"><svg class="icon-sprite-md2"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#whatsapp"></use></svg> Whatsapp Destek</a></li>
+	<li><a class="footer__extras--contact--text" href="tel: 0850 288 62 84" rel="nofollow"><svg class="icon-sprite-md2"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#phone"></use></svg> 0850 288 62 84</a></li>
+	<li><span class="footer__extras--contact--text"><svg class="icon-sprite-md2"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#call-center-icon"></use></svg> Çalışma saatleri: 08:00 - 00:00</span></li>
+	<li><a class="footer__extras--contact--text" href="/cdn-cgi/l/email-protection#b393d1dadfd4daf3ded2c5da9dd0dcde" rel="nofollow"><svg class="icon-sprite-md2"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#email"></use></svg> <span class="__cf_email__" data-cfemail="791b10151e103914180f10571a1614">[email protected]</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="col-xl-4 col-lg-4">
+<div class="footer__extras">
+<div class="footer__extras__title">App&#39;i İndir</div>
+
+<div class="footer__extras__list">
+<div class="footer__extras__list--ads">
+<ul>
+	<li><a href="http://goo.gl/czJRA0" rel="me"><img alt="GooglePlay" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/h03/h4a/9694501208094/google-play.svg" height="34" title="GooglePlay" width="104"/> </a></li>
+	<li><a href="http://goo.gl/Etr8cN" rel="me"><img alt="AppStore" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/h6b/h4d/9694501306398/app-store.svg" height="34" title="AppStore" width="104"/> </a></li>
+	<li><a href="https://appgallery.huawei.com/#/app/C101785969" rel="me"><img alt="Huawei" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/hd3/h50/9694501404702/huawei.svg" height="34" title="Huawei" width="104"/> </a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer__extras__title"> </div>
+
+<div class="footer__extras__list">
+<div class="footer__extras__list--ads">
+<ul>
+	<li><a href="http://www.instagram.com/mavi/" rel="me"><img alt="İnstagram" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/h8a/h62/9694501961758/instagram.svg" height="34" title="İnstagram" width="34"/> </a></li>
+	<li><a href="http://www.twitter.com/mavi" rel="me"><img alt="Twitter" class="lazy" data-src="/medias/x-twitterp1.svg?context=bWFzdGVyfG1hdmljZG5pbWFnZXN8NTYwfGltYWdlL3N2Zyt4bWx8YURrNEwyZ3haUzh4TURJek5EUTBORFEwTnpjM05DOTRMWFIzYVhSMFpYSndNUzV6ZG1jfDQ1M2FhZmUzOWFiYzRjM2VkOWNlMzBlN2MyMDBkMTY4MmZmNDg4NmFkMWQwYjJhY2JkMDgzMjVkYmM2YjQ4NzA" height="27" title="Twitter" width="27"/> </a></li>
+	<li><a href="http://www.facebook.com/mavi" rel="me"><img alt="Facebook" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/hf5/had/9694502092830/facebook.svg" height="34" title="Facebook" width="34"/> </a></li>
+	<li><a href="https://open.spotify.com/user/mavihq" rel="me"><img alt="Spotify" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/hb2/hb4/9694502289438/spotify.svg" height="34" title="Spotify" width="34"/> </a></li>
+	<li><a href="http://www.youtube.com/mavi" rel="me"><img alt="Youtube" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/h92/hc1/9694502617118/youtube.svg" height="34" title="Youtube" width="34"/> </a></li>
+	<li><a href="https://www.tiktok.com/@mavi?lang=tr" rel="me"><img alt="Tiktok" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/hfd/h5a/10011689975838/tik-tok.svg" height="34" title="Tiktok" width="34"/> </a></li>
+</ul>
+</div>
+</div>
+
+<form action="" id="lang-form" method="post"><input name="__original_url" type="hidden" value="https://www.mavi.com/login/_s/language"/>
+<div class="dropdown js-dropdown">
+<div class="dropdown-button size:small  type:border-2  mobile-type:  color:  style: footerLangSelect"><span class="text">Türkçe</span> <span class="icon"> <svg class="icon-sprite"> <use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#arrowDown"></use> </svg> </span></div>
+
+<div class="dropdown-content js-scrollbar-desktop type:border   mobile-type: ">
+<div class="dropdown-content-area ">
+<div class="dropdown-content-area--checkbox-list">
+<div class="checkbox-list">
+<div class="item">
+<div class="checkbox-radio variant:text size:small  "><label class="label-container "><input checked="checked" data-id="tr" name="code" onclick="changeLanguage(&#39;tr&#39;);" type="radio" value="tr"/> </label>
+
+<div class="span-text">
+<div class="indicator"> </div>
+<label class="label-container "><span class="text">Türkçe</span> </label></div>
+<label class="label-container "> </label></div>
+</div>
+
+<div class="item">
+<div class="checkbox-radio variant:text size:small  "><label class="label-container "><input data-id="en" name="code" onclick="changeLanguage(&#39;en&#39;);" type="radio" value="en"/> </label>
+
+<div class="span-text">
+<div class="indicator"> </div>
+<label class="label-container "><span class="text">English</span> </label></div>
+<label class="label-container "> </label></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><input name="CSRFToken" type="hidden" value="048d4562-8f0e-48f9-b9f5-645b8a87b23b"/></div>
+</form>
+
+<div class="footer__etbis desktop-only">
+<div id="ETBIS">
+<div id="C94B559B160048808B413120DF728E37"><a href="https://etbis.eticaret.gov.tr/sitedogrulama/C94B559B160048808B413120DF728E37" target="_blank"><img src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAEVdSURBVHhe7Z0HuF1F9fYlQUIgJHSkgyBIVUho0kQQEEGQItJbEBRECJHeQbqC0kFACCXSITQjAgHSb01uCkkgvfdeYb7122e/J+vsO6fcJAT5f77P8xLutL3P3mtm1lqzZva3DGFF8O9//3sAM2bMCOutt16j/K5duyb5HjfddFOjcgcccECaG8K5557bKN/z3XffTcp99tlnoXnz5knalVdemaR5fPzxx/k6Dz/8cJq6FJ07d87nv/XWW2nqUtx+++35/Lq6uiSte/fu+bT7778/SSuHESNGhG9/+9tJnT/+8Y9pamnMnTs3bLLJJkmd448/Pk0N4Re/+EX++svJl40JYplNZjlB6NWrV5LvsbyC0KVLl6TckCFD8mlXXHFFkubRr1+/fH5MEF555ZV8/quvvpqmLsUdd9yRzx82bFiShkAo7aGHHkrSymHmzJl5QbjuuuvS1PLYbLPNkjorRRC22WabcNpppzWJP/3pT/MNlhOEyy67LDz99NMFvOGGG/Jtrb322km5coKw9dZb5+vwgsHEiRPDGWeckaTxgLPXueaaa/L1JQiLFi0KL7zwQpJ/55135ttUj589e3bo1KlTko/AKv+BBx5I0v72t7/l0/70pz8lac8991yYN29eUp/eT5rnX/7yl/zIdcQRRzTKj5Hnus466yR1YoKw5pprhlNOOSV/L5Xw5JNPDmussYaeSaEg/OY3v0kvUTmqqqrUWFlBiPHaa69N6oBdd901Sdt///3TlBDat2/fqM5ZZ52V5sZx2223NarjKUGgd6666qpJ2i9/+cskzYOerzp+GKfDkPbDH/4wTQnh/PPPz5cdN25ckvbMM8/k01YUY4Kw1VZbpSlNw+abb652CwWBHtVUvP/++2psmQThlltuSeqA7373u0lau3bt0pSQSG+2zrHHHpvmxnHrrbc2quNJTwYIQsuWLZO04447LknzmDBhQr7OxRdfnKaG8IMf/CBJ8wJ7ySWXJGn0TkYSwLSl+iuKMUHYYostwsKFC9PUyjB//vyw6aabqt3ignD55ZeHww47rChHjRqVlCsnCAcffHCi0MHdd989X1ak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" style="width:100px; height:120px"/></a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-xl-8 col-lg-8">
+<div class="footer__navigation">
+<div class="footer__navigation__sec1 accordion js-accordion">
+<p class="accordion__item--heading">YARDIM</p>
+
+<div class="footer__navigation__sec1--list">
+<ul>
+	<li><a href="/guest/order-tracking" rel="nofollow">Sipariş Sorgulama</a></li>
+	<li><a href="/kolay-iade-degisim" rel="nofollow">İade ve Değişim</a></li>
+	<li><a href="/sikca-sorulan-sorular" rel="">Sıkça Sorulan Sorular</a></li>
+	<li><a href="/beden-tablosu" rel="">Beden Tablosu</a></li>
+	<li><a href="/directory-operations" rel="nofollow">İşlem Rehberi</a></li>
+	<li><a href="/site-haritasi" rel="">Site Haritası</a></li>
+	<li><a href="/magazalar" rel="nofollow">En Yakın Mavi</a></li>
+	<li><a href="/bize-ulasin" rel="nofollow">Bize Ulaşın</a></li>
+	<li><a href="/engelsiz-iletisim" rel="">Engelsiz İletişim</a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer__navigation__sec1 accordion js-accordion">
+<p class="accordion__item--heading">KURUMSAL BİLGİLER</p>
+
+<div class="footer__navigation__sec1--list">
+<ul>
+	<li><a href="https://www.mavicompany.com/tr" rel="">Kurumsal Web Sitesi</a></li>
+	<li><a href="https://www.mavi.com/hakkimizda" rel="">Hakkımızda</a></li>
+	<li><a href="https://www.mavi.com/sustainability/index.html" rel="nofollow">Sürdürülebilirlik</a></li>
+	<li><a href="https://www.mavicompany.com/tr/menu/yatirimci-iliskileri" rel="">Yatırımcı İlişkileri</a></li>
+	<li><a href="https://www.mavicompany.com/tr/menu/kariyer" rel="nofollow noopener">Kariyer</a></li>
+	<li><a href="https://www.mavicompany.com/i/assets/documents/MAVIDE_BIZ_VE_ILKELERIMIZ_2022_F.pdf" rel="nofollow">Mavi&#39;de Biz ve İlkelerimiz</a></li>
+	<li><a href="http://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11119" rel="nofollow noopener">Bilgi Toplumu Hizmetleri</a></li>
+	<li><a href="/kurumsalsatis" rel="nofollow">Kurumsal Satış</a></li>
+	<li><a href="https://www.mavi.com/bayilik-basvuru" rel="nofollow">Bayilik Başvuru Formu</a></li>
+	<li><a href="/iletisim" rel="">İletişim</a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer__navigation__sec1 accordion js-accordion">
+<p class="accordion__item--heading">FAVORİ KATEGORİLER</p>
+
+<div class="footer__navigation__sec1--list">
+<ul>
+	<li><a href="/kadin/tisort/c/1" rel="">Kadın Tişört</a></li>
+	<li><a href="/kadin/tisort/atlet/c/1" rel="">Kadın Atlet Tişört</a></li>
+	<li><a href="/kadin/dis+giyim/denim/c/1" rel="">Kadın Jean Ceket</a></li>
+	<li><a href="/kadin/jean/c/1" rel="">Kadın Jean</a></li>
+	<li><a href="/kadin/elbise/denim/c/1" rel="">Kadın Jean Elbise</a></li>
+	<li><a href="/kadin/gomlek/c/1" rel="">Kadın Gömlek</a></li>
+	<li><a href="/kadin/esofman+alti/c/1" rel="">Kadın Eşofman Altı</a></li>
+	<li><a href="/kadin/dis+giyim/trenckot/c/1" rel="">Kadın Trençkot</a></li>
+	<li><a href="/kadin/salopet-tulum/c/1" rel="">Kadın Solopet-Tulum</a></li>
+	<li><a href="/kadin/dis+giyim/bomber/c/1" rel="">Kadın Bomber Ceket</a></li>
+	<li><a href="/kadin/bluz/c/1" rel="">Kadın Bluz</a></li>
+	<li><a href="/kadin/triko/hirka/c/1" rel="">Kadın Hırka Triko</a></li>
+</ul>
+
+<ul>
+	<li><a href="/erkek/tisort/c/2" rel="">Erkek Tişört</a></li>
+	<li><a href="/erkek/tisort/polo/c/2" rel="">Erkek Polo Yaka Tişört</a></li>
+	<li><a href="/erkek/gomlek/keten/c/2" rel="">Erkek Keten Gömlek</a></li>
+	<li><a href="/erkek/gomlek/c/2" rel="">Erkek Gömlek</a></li>
+	<li><a href="/erkek/gomlek/denim/c/2" rel="">Erkek Jean Gömlek</a></li>
+	<li><a href="/erkek/jean/c/2" rel="">Erkek Jean</a></li>
+	<li><a href="/erkek/sort/c/2" rel="">Erkek Şort</a></li>
+	<li><a href="/erkek/pantolon/c/2" rel="">Erkek Gabardin Pantolon</a></li>
+	<li><a href="/erkek/pantolon/kargo/c/2" rel="">Erkek Kargo Pantolon</a></li>
+	<li><a href="/erkek/dis+giyim/denim/c/2" rel="">Erkek Jean Ceket</a></li>
+	<li><a href="/erkek/sweatshirt/c/2" rel="">Erkek Sweatshirt</a></li>
+	<li><a href="/erkek/esofman+alti/c/2" rel="">Erkek Eşofman Altı</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-desktop-hidden">
+<div class="footer__extras--contact">
+<ul>
+	<li><a class="footer__extras--contact--text" href="https://api.whatsapp.com/send/?phone=908502886284&amp;text=Merhaba&amp;app_absent=0" target="_blank"><svg class="icon-sprite-sm"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#whatsapp"></use></svg> Whatsapp Destek</a></li>
+	<li><a class="footer__extras--contact--text" href="tel: 0850 288 62 84"><svg class="icon-sprite-sm"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#phone"></use></svg> 0850 288 62 84</a></li>
+	<li><span class="footer__extras--contact--text"><svg class="icon-sprite-sm"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#call-center-icon"></use></svg> Çalışma saatleri: 08:00 - 00:00</span></li>
+	<li><a class="footer__extras--contact--text" href="/cdn-cgi/l/email-protection#0323616a6f646a436e62756a2d606c6e"><svg class="icon-sprite-sm"><use xlink:href="/_ui/responsive/theme-mavi/images/icons/allicons.svg#email"></use></svg> <span class="__cf_email__" data-cfemail="0a6863666d634a676b7c6324696567">[email protected]</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer__agreements">
+<div class="copyright desktop-only">© 2024 Mavi - Tüm Hakları Saklıdır</div>
+
+<ul>
+	<li><a href="/uyelik-sozlesmesi" rel="nofollow" target="">Mavi Üyelik Sözleşmesi</a></li>
+	<li><a href="/kartus-uyelik-sozlesmesi" rel="nofollow" target="">Kartuş Üyelik Sözleşmesi</a></li>
+	<li><a href="/aydinlatma-metinleri" rel="nofollow" target="">Aydınlatma Metinleri</a></li>
+	<li><a href="/cerez-aydinlatma-metni" rel="nofollow" target="">Çerez Aydınlatma Metni</a></li>
+</ul>
+</div>
+
+<div class="copyright mobile-only">© 2024 Mavi - Tüm Hakları Saklıdır</div>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="mavi-loading-box">
+<div class="lds-ring">
+<div> </div>
+
+<div> </div>
+
+<div> </div>
+
+<div> </div>
+</div>
+</div>
+
+<div class="mm-slideout" id="mm-blocker"> </div>
+
+<div class="magic-hidden-wrapper"> </div>
+
+<form action="" name="accessiblityForm"><input name="__original_url" type="hidden" value="https://www.mavi.com/login"/> <input id="accesibility_refreshScreenReaderBufferField" name="accesibility_refreshScreenReaderBufferField" type="hidden" value=""/> </form>
+
+<div aria-live="polite" aria-relevant="text" class="skip" id="ariaStatusMsg" role="status"> </div>
+
+<div aria-hidden="true" aria-labelledby="" class="modal fade accountModal" id="js-gift-remove-popup" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header"><a aria-label="Close" class="close" data-dismiss="modal" href="javascript:;"><span>×</span> </a></div>
+
+<div class="modal-body text-center">
+<h2 class="modal-title m-0" style="font-size: 16px !important;font-family:&#39;Mavi Sans&#39;">Hediye kartı ile ürün aynı sepete eklenememektedir. Hediye kartları sepetinizden kaldırılacaktır. Devam etmek ister misiniz?</h2>
+</div>
+
+<div class="modal-footer">
+<div class="row">
+<div class="col-xs-6 col-sm-5 col-xs-offset-0 col-sm-offset-1 text-center"><button class="btn l-button accountBtn js-complete-request-button js-with-gift-card js-remove-products" data-dismiss="modal">Evet</button></div>
+
+<div class="col-xs-6 col-sm-5 col-xs-offset-0 col-sm-offset-1 text-left"><button class="btn l-button accountBtn js-complete-request-button" data-dismiss="modal">Hayır</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="" class="modal fade accountModal" id="js-gift-product-remove-popup" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header"><a aria-label="Close" class="close" data-dismiss="modal" href="javascript:;"><span>×</span> </a></div>
+
+<div class="modal-body text-center">
+<h2 class="modal-title m-0" style="font-size: 16px !important;font-family:&#39;Mavi Sans&#39;">Hediye kartı ile ürün aynı sepete eklenememektedir. Sepetinizdeki ürünler favoriye eklenecektir. Devam etmek ister misiniz?</h2>
+</div>
+
+<div class="modal-footer">
+<div class="row">
+<div class="col-xs-6 col-sm-7 text-center"><button class="btn l-button accountBtn js-complete-request-button js-with-gift-card js-move-products-to-favourites" data-dismiss="modal">Evet</button></div>
+
+<div class="col-xs-6 col-sm-5 text-left"><button class="btn l-button accountBtn js-complete-request-button" data-dismiss="modal">Hayır</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="" class="modal fade accountModal" id="js-gift-merge-popup" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header"><a aria-label="Close" class="close" data-dismiss="modal" href="javascript:;"><span>×</span> </a></div>
+
+<div class="modal-body text-center">
+<h2 class="modal-title m-0" style="font-size: 16px !important;font-family:&#39;Mavi Sans&#39;">Hediye kartı ile ürün aynı sepete eklenememektedir. Hediye kartları sepetinizden kaldırılacaktır. Devam etmek ister misiniz?</h2>
+</div>
+
+<div class="modal-footer">
+<div class="row">
+<div class="col-xs-6 col-sm-7 text-center"><button class="btn l-button accountBtn js-complete-request-button js-with-gift-card js-merge-products" data-dismiss="modal">Evet</button></div>
+
+<div class="col-xs-6 col-sm-5 text-left"><button class="btn l-button accountBtn js-complete-request-button js-gift-disapprove" data-dismiss="modal">Hayır</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="" class="modal fade accountModal" id="js-gift-product-merge-popup" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header"><a aria-label="Close" class="close" data-dismiss="modal" href="javascript:;"><span>×</span> </a></div>
+
+<div class="modal-body text-center">
+<h2 class="modal-title m-0" style="font-size: 16px !important;font-family:&#39;Mavi Sans&#39;;">Hediye kartı ile ürün aynı sepete eklenememektedir. Sepetinizdeki ürünler favoriye eklenecektir. Devam etmek ister misiniz?</h2>
+</div>
+
+<div class="modal-footer">
+<div class="row">
+<div class="col-xs-6 col-sm-7 text-center"><button class="btn l-button accountBtn js-complete-request-button js-with-gift-card js-merge-products" data-dismiss="modal">Evet</button></div>
+
+<div class="col-xs-6 col-sm-5 text-left"><button class="btn l-button accountBtn js-complete-request-button js-gift-disapprove" data-dismiss="modal">Hayır</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="removeSelectedItemPopup" role="dialog" tabindex="-1"><input class="pcode" type="hidden"/> <input class="basePCode" type="hidden"/> <input class="pname" type="hidden"/> <input class="pcategory" type="hidden"/> <input class="pgender" type="hidden"/> <input class="purl" type="hidden"/> <input class="premoveurl" type="hidden"/> <input class="paddurl" type="hidden"/>
+<div class="modal-dialog" role="document">
+<div class="modal-content" style="text-align: center;">
+<div class="modal-body">
+<div class="removeSelectionPopupImg" style="margin: auto;"><img alt="Onay Düğmesi" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/h19/h9c/8968497332254/popupokbutton.jpg" height="63" title="Onay Düğmesi" width="100"/></div>
+Ürünü sepetten çıkarmak istediğinize emin misiniz?</div>
+
+<div class="buttons-container"><button aria-label="Sil ve Favorilere Ekle" class="button button--bg-white button--border-black btn btn-line" id="removeProductAndAddToFavBtn" title="Sil ve Favorilere Ekle" type="button">Sil ve Favorilere Ekle</button><button aria-label="Sil" class="button button--bg-dark btn btn-line btn-primary" id="removeProductFromCartBtn" title="Sil" type="button">Sil</button></div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="removeSelectedGiftItemPopup" role="dialog" tabindex="-1"><input class="giftCode" type="hidden"/>
+<div class="modal-dialog" role="document">
+<div class="modal-content" style="text-align: center;">
+<div class="modal-body">
+<div class="removeSelectionPopupImg" style="margin: auto;"><img alt="Onay Düğmesi" class="lazy" data-src="//sky-static.mavi.com/sys-master/maviTrImages/h19/h9c/8968497332254/popupokbutton.jpg" height="63" title="Onay Düğmesi" width="100"/></div>
+Ürünü sepetten çıkarmak istediğinize emin misiniz?</div>
+
+<div class="buttons-container"><button aria-label="Vazgeç" class="button button--bg-white button--border-black btn btn-line" data-dismiss="modal" title="Vazgeç">Vazgeç</button><button aria-label="Sil" class="button button--bg-dark btn btn-line btn-primary" id="removeGiftProductFromCartBtn" title="Sil" type="button">Sil</button></div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="modal fade" id="mavi-modal" role="dialog" tabindex="-1">
+<div class="modal-dialog"><!-- Modal content-->
+<div class="modal-content registerAgreementPopup" style="">
+<div class="modal-body bodyOfPopUp"> </div>
+</div>
+
+<div class="modal-footer"><button class="btn btn-primary" data-dismiss="modal" type="button">Kapat</button></div>
+</div>
+</div>
+
+<div aria-hidden="true" class="modal fade" id="mavi-modal2" role="dialog" tabindex="-1">
+<div class="modal-dialog"><!-- Modal content-->
+<div class="modal-content" style="">
+<div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button></div>
+
+<div class="modal-body bodyOfPopUp"> </div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="modal fade" data-backdrop="static" id="mavi-modal-guestSummary" role="dialog" tabindex="-1">
+<div class="modal-dialogGuest"><!-- Modal content-->
+<div class="modal-contentGuest guestSummaryPopup" style="">
+<div class="modal-body bodyOfPopUp"> </div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="" class="modal fade accountModal" id="js-change-store-popup" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header"><a aria-label="Close" class="close" data-dismiss="modal" href="javascript:;"><span>×</span> </a></div>
+
+<div class="modal-body">
+<h2 class="modal-title text-center">İl/ilçe seçimini değiştirmek ister misiniz?</h2>
+</div>
+
+<div class="modal-footer">
+<div class="row">
+<div class="col-xs-12 col-sm-6 text-center"><button class="btn l-button accountBtn" onclick="window.location.href = &#39;/express-delivery&#39;;">Değiştir</button></div>
+
+<div class="col-xs-12 col-sm-6 text-center"><button class="btn l-button accountBtn" data-dismiss="modal" id="js-remove-store">Seçimi Kaldır</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>

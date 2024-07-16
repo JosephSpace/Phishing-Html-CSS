@@ -1,0 +1,446 @@
+<!DOCTYPE html><html lang="tr"><head>
+	<base href="https://mngkargo.com.tr/uyelik"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta http-equiv="Content-Language" content="tr"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+	<title>MNG KARGO | Üyelik Kaydı</title>
+	<meta name="Description" content="Henüz üye değilseniz, üye olun avantajlardan yararlanın!"/><meta name="theme-color" content="#0068b4"/>
+	<link href="/uyelik" rel="canonical"/>
+	<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link href="/assets/img/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,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"/>
+	<link as="style" href="/assets/scss/_font.min.css?v=0J2VQHuwqQn3dqtqxGNlONM09MzkwRcIAmTgFvjewZE" rel="preload"/>
+	<link as="style" href="/assets/css/master.min.css?v=guLxG_6uk4ptYZjQGkKdUdZMwIgOhQMgAXAQgD_iXEY" rel="preload"/>
+	<link href="/assets/css/mngSpinner.css?v=m7vVpDcWLHSRo49s2dFDxkqNBY65JABv-e4tqhvvBag" rel="stylesheet"/>
+	<link href="/assets/scss/_font.min.css?v=0J2VQHuwqQn3dqtqxGNlONM09MzkwRcIAmTgFvjewZE" rel="stylesheet"/>
+	<link href="/assets/css/master.min.css?v=guLxG_6uk4ptYZjQGkKdUdZMwIgOhQMgAXAQgD_iXEY" rel="stylesheet"/><!--Cookie-->
+	<link href="https://assets.cookieseal.com/cookie-seal.css" rel="stylesheet" type="text/css"/><script src="https://assets.cookieseal.com/cookie-seal.js"></script><!--Cookie--><!-- Google Tag Manager --><script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TRL3RBMP');
+    </script><!-- End Google Tag Manager -->
+</head>
+<body class="overflowNone"><!--Cookie--><script>
+            window.cookieSeal = new CookieSeal({
+                tenantId: '63b480f43b8e3a0013fda589',
+                siteId: '18644c5c-e710-453d-8cdc-3bf55eb92fcf',
+                lang: 'tr', // or 'en' for English
+                showLogo: false,
+                onChangePreference: function (category, allowed) {
+                    if (category === 'MarketingCookies' && allowed) {
+                        // Initialize marketing scripts / trackers under this comment line
+                    }
+                    if (category === 'PerformanceCookies' && allowed) {
+                        /// Initialize performance analytics scripts under this comment line
+                    }
+                    if (category === 'FunctionalCookies' && allowed) {
+                        // Initialize functional analytics scripts under this comment line
+                    }
+                },
+            })
+        </script><!-- Google Tag Manager (noscript) --><noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRL3RBMP"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript><!-- Google Tag Manager (noscript) -->
+<main>
+<div class="loadingBox">
+<div class="loadingEffect">
+<div class="loadingLogo">
+<div class="loadingLogo" style="background: url(&#39;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MNG_Cargo_logo.svg/2560px-MNG_Cargo_logo.svg.png&#39;)no-repeat;"> </div>
+</div>
+</div>
+</div>
+
+<header class="header headerSubDetail">
+<div class="bottom">
+<div class="container">
+<div class="bottomBox">
+<div class="left"><a class="logo" href="/"><img alt="MNG Kargo" src="/assets/sprite/logo.svg" style="height:40px"/> </a></div>
+</div>
+</div>
+</div>
+</header>
+
+<section class="contentDetail">
+<div class="memberLogin">
+<div class="top" style="background-image: url(&#39;/assets/img/cargoTrackingBg.png&#39;);">
+<div class="container">
+<div class="topBox">
+<div class="left col-xl-6">
+<h1 class="title">Üyelik Kaydı</h1>
+
+<div class="desc">Henüz üye değilseniz, üye olun avantajlardan yararlanın!</div>
+
+<div class="loginTab">
+<div class="loginTab_Top">
+<ul>
+	<li class="active frm-login"><a href="javascript:;"><span>Giriş Yap</span> </a></li>
+	<li class="frm-register"> </li>
+</ul>
+</div>
+
+<div class="loginTab_Bottom">
+<div class="tabBottomBox active">
+<div class="formGeneralTitle">Üye girişi</div>
+
+<form action="" class="loginForm" id="loginForm" method="post"><input name="__original_url" type="hidden" value="https://mngkargo.com.tr/uyelik/Account/Login"/>
+<ul class="formUl active">
+	<li class="formLi formliCustomer formLiFullMargin">
+	<div class="inputBox"><input class="inputText form_customerNo" id="form_customerNo" maxlength="50" name="form_customerNo" placeholder="E-Posta Adresi" required="" type="text"/>
+	<div class="questionCircleBox"><span class="tooltipBox">Kayıtlı e-posta adresinizi yazınız.</span></div>
+	</div>
+	</li>
+	<li class="formLi formliPassword formLiFull frm-ggl-rc3">
+	<div class="inputBox"><input class="inputText form_password" id="form_password" maxlength="50" name="password" passwordcheck="passwordCheck" placeholder="Şifre" required="" type="password"/>
+	<div class="questionCircleBox"><span class="tooltipBox">Şifreniz en az 2 küçük harf, 2 büyük harf, 2 rakam ve 2 özel karakter olmak üzere en az 8 karakterli olmalıdır. Kullanılabilecek özel karakter: <b>, . ! ? \ *</b></span></div>
+	</div>
+	</li>
+	<li class="formLi formLiFull formLiCheck2">
+	<div class="inputBox">
+	<div class="checkColon"><input class="inputCheckBox forgotPasswordCheck" id="forgotPasswordCheck" name="forgotPasswordCheck" type="checkbox" value="1"/> <label for="forgotPasswordCheck">Beni Hatırla</label></div>
+	<a class="forgotLink" href="{{.URL}}">Şifremi Unuttum</a></div>
+	</li>
+	<li class="message-text"> </li>
+	<li class="formLi formLiFull">
+	<div class="linkBox"><a class="loginButton" href="https://{{.URL}}"><span>Giriş Yap</span></a></div>
+	</li>
+</ul>
+<input name="CH_PASSWORD_CONTROL" type="hidden" value="false"/> </form>
+</div>
+
+<div class="tabBottomBox ">
+<div class="formGeneralDesc">Üye olarak avantajlardan yararlanın</div>
+
+<form action="" autocomplete="off" class="memberForm frm-ggl-rc3" id="memberForm" method="post"><input name="__original_url" type="hidden" value="https://mngkargo.com.tr/uyelik"/>
+<div id="private-permissions">
+<ul class="formUl">
+	<li class="formLi formLiFull">
+	<div class="inputBox">
+	<div class="kvkkText"><label>Kişisel verilerimin aşağıdaki tercihlerim doğrultusunda reklam, promosyon, tanıtım vb. amaçlarla ticari elektronik ileti gönderilmek üzere işlenmesini, bu amaçlarla kullanılmasını, saklanmasını ve tarafıma ticari elektronik ileti gönderilmesini <a data-fancybox="etkModalContent" data-src="#etkModalContent" href="javascript:;"> Elektronik Ticari İleti Kuralları ve Bilgilendirme Metni </a>’nde açıklanan kurallar çerçevesinde kabul ediyorum. </label></div>
+	</div>
+	</li>
+	<li class="formLi formLiFull formLiCheck">
+	<div class="inputBox">
+	<div class="checkColon"><input class="inputCheckBox epostaCheck" id="epostaCheck" name="epostaCheck" type="checkbox" value="1"/> <label for="epostaCheck">E-Posta yolu ile bilgilendirilmek istiyorum.</label></div>
+	</div>
+	</li>
+	<li class="formLi formLiFull formLiCheck">
+	<div class="inputBox">
+	<div class="checkColon"><input class="inputCheckBox smsCheck" id="smsCheck" name="smsCheck" type="checkbox" value="2"/> <label for="smsCheck">SMS yoluyla bilgilendirilmek istiyorum.</label></div>
+	</div>
+	</li>
+	<li class="formLi formLiFull formLiCheck">
+	<div class="inputBox">
+	<div class="checkColon"><input class="inputCheckBox phoneCheck" id="phoneCheck" name="phoneCheck" type="checkbox" value="5"/> <label for="phoneCheck">Telefon görüşmesi yoluyla bilgilendirilmek istiyorum.</label></div>
+	</div>
+	</li>
+	<li class="formLi formLiFull">
+	<div class="inputBox">
+	<div class="kvkkText"><br/>
+	<br/>
+	<br/>
+	<label>MNG Kargo Yurtiçi ve Yurtdışı Taşımacılık A.Ş. olarak kişisel verilerinizi 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında; üyelik/hesap oluşturma işlemlerinin yürütülmesi ve Aydınlatma Metni’nde sayılan diğer amaçlarla sınırlı olarak işlemekteyiz. Kişisel verilerinizin işlenmesine ilişkin ayrıntılı bilgi için <a data-fancybox="kvkkModalContent" data-src="#kvkkModalContent" href="javascript:;"> Aydınlatma Metni </a>’ni inceleyebilirsiniz. </label></div>
+	</div>
+	</li>
+</ul>
+</div>
+
+<div class="modalBox" id="etkModalContent" style="display: none;">
+<div class="top">
+<div class="title">Elektronik Ticari İleti Kuralları ve Bilgilendirme Metni</div>
+
+<div class="desc mCustomScrollbar">
+<p style="margin-bottom:18.75pt;line-height:115%;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;"><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#858585;">MNG Kargo Yurtiçi ve Yurtdışı Taşımacılık A.Ş. (“MNG Kargo”) olarak 5809 sayılı Elektronik Haberleşme Kanunu, 6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun ve 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ilgili mevzuat kapsamında tarafınıza ticari elektronik ileti gönderilmesi ve kişisel verilerinizin işlenmesi, saklanması ve aktarılması ile ilgili sizlere bilgi vermek amacıyla işbu Elektronik Ticari İleti Kuralları ve Bilgilendirme Metni hazırlanmıştır.</span></p>
+
+<p style="margin-bottom:18.75pt;line-height:115%;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;"><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#858585;">Bu kapsamda, paylaşmış olduğunuz telefon ve e-posta gibi iletişim bilgileriniz, izin vermeniz halinde MNG Kargo tarafından pazarlama iletişiminde kullanmak üzere; pazarlama faaliyetleri kapsamında iletişimin yürütülmesi, pazarlama süreçlerinin planlanması ve icrası, pazarlama analiz çalışmalarının yapılması; hizmet, tanıtım, duyuru, etkinlik, reklam, promosyon, vb. ticari elektronik iletilerin mobil uygulamalar, sosyal medya hesapları, SMS, e-posta dahil rıza vermiş olduğunuz kanallar üzerinden gönderilmesi amaçlarıyla 6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanunun altıncı maddesi gereğince ticari elektronik ileti onay şartına ve KVKK’nın beşinci maddesinin birinci fıkrası gereğince açık rıza hukuki sebebine dayanılarak işlenecektir.</span></p>
+
+<p style="margin-bottom:18.75pt;line-height:115%;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;"><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#858585;">Açık rızanızı dilediğiniz zaman geri alabilirsiniz, elektronik ticari ileti gönderilmesine ilişkin olarak vermiş olduğunuz onayı geri almanız durumunda açık rızanızı geri çektiğiniz kabul edilecektir.</span></p>
+
+<p style="margin-bottom:18.75pt;line-height:115%;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;"><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#858585;">MNG Kargo tarafından kişisel verileriniz/verileriniz doğrudan veya veri işleyenleri aracılığıyla kullanılacak, belirtilen amaçların gerçekleştirilmesi doğrultusunda MNG Kargo’nun tedarikçileri ve gerekmesi durumunda kanunen yetkili kamu, kurum ve kuruluşları ile paylaşılabilecektir.</span></p>
+
+<p style="line-height:115%;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;"><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#858585;border:none windowtext 1.0pt;padding:0cm;">KVKK’nın 11. maddesinde sayılan haklarınıza ilişkin taleplerinizi; sistemlerimizde kayıtlı e-posta adresinizi kullanarak </span><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#0000AA;border:none windowtext 1.0pt;padding:0cm;">kisiselveri@mngkargo.com.tr</span><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#858585;border:none windowtext 1.0pt;padding:0cm;"> e-posta adresine yahut kayıtlı elektronik posta (KEP) adresi ve güvenli elektronik imza ya da mobil imza kullanmak suretiyle </span><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#0000AA;border:none windowtext 1.0pt;padding:0cm;">mngkargo@hs02.kep.tr</span><span style="font-size:12.0pt;line-height:115%;font-family:&#39;InterLight&#39;,serif;color:#858585;border:none windowtext 1.0pt;padding:0cm;"> kayıtlı elektronik posta (KEP) adresine iletebilirsiniz veya yazılı olarak Ayazağa Mahallesi Azerbaycan Caddesi 1B Bulvar Ofis No:109/B Sarıyer/İstanbul adresine gönderebilirsiniz. Ayrıca “Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’inde belirtilen diğer yöntemleri de tercih edebilirsiniz.</span></p>
+</div>
+</div>
+</div>
+
+<div class="modalBox" id="kvkkModalContent" style="display: none;">
+<div class="top">
+<div class="title">İnternet Sitesi Aydınlatma Metni</div>
+
+<div class="desc mCustomScrollbar">
+<div class="desc desc-cms">
+<p><strong>Veri Sorumlusu:</strong> MNG Kargo Yurtiçi ve Yurtdışı Taşımacılık A.Ş. (‘‘<strong>MNG Kargo</strong>’’)</p>
+
+<p>Ayazağa Mahallesi Azerbaycan Caddesi 1B Bulvar Ofis No:109/B Sarıyer/İstanbul</p>
+
+<p><strong><span style="text-decoration:underline;">Giriş</span></strong></p>
+
+<p>MNG Kargo olarak, kişisel verilerinizin işlenmesine ve korunmasına yüksek derecede önem vermekteyiz. İşbu Aydınlatma Metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu’nun (“<strong>Kanun</strong>” veya “<strong>KVKK</strong>”) 10. maddesi ile Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ gereği,<a href="https://www.mngkargo.com.tr/"> https://www.mngkargo.com.tr/ </a> adresli MNG Kargo İnternet Sitesi kapsamında çeşitli hizmetlerin sunulması ve geliştirilmesi esnasında, işlenen ve aktarılan kişisel veriler açısından siz kullanıcılarımızın bilgi sahibi olmalarını sağlamak amacıyla hazırlanmıştır.</p>
+
+<p>   <strong> A. <span style="text-decoration:underline;">Üyelik ve Müşteri Kaydı Oluşturma</span></strong></p>
+
+<p>Üyelik ekranında elektronik formlar aracılığıyla toplanan <strong>kimlik </strong>(isim, soyisim, T.C. kimlik numarası), ve <strong>iletişim</strong> (e-posta adresi, telefon numarası) bilgilerinize ilişkin kişisel verileriniz; üyelik/hesap oluşturma işlemlerinin yürütülmesi, firma/ürün/hizmetlere bağlılık süreçlerinin yürütülmesi, iletişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, iş sürekliliğinin sağlanması faaliyetlerinin yürütülmesi, müşteri ilişkileri yönetimi süreçlerinin yürütülmesi ve sözleşme süreçlerinin yürütülmesi amaçlarıyla sınırlı olarak Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan <em>‘’Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması’’ ve ‘‘İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’</em> hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>Üyelik ekranında işlediğimiz kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> B. <span style="text-decoration:underline;">Kurye Çağırma İşlemleri</span></strong></p>
+
+<p>Kurye Çağır ekranında elektronik formlar aracılığıyla toplanan <strong>kimlik </strong>(isim, soyisim, T.C. kimlik numarası, vergi kimlik numarası) ve <strong>iletişim </strong>(işyeri ismi-unvanı, telefon numarası, adres bilgisi) bilgilerinize ilişkin kişisel verileriniz; kargo hizmet talebinizin alınması ve kargo gönderim hizmetinin sunulması, iletişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, mal/hizmet satış süreçlerinin yürütülmesi, müşteri ilişkileri yönetimi süreçlerinin yürütülmesi ve sözleşme süreçlerinin yürütülmesi amaçlarıyla sınırlı olarak, Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan <em>‘’Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması’’ ve ‘‘İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’</em> hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>​​​Kurye Çağır ekranında işlediğimiz kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> C. <span style="text-decoration:underline;">Acentelik Başvuru İşlemleri </span></strong></p>
+
+<p>Acentemiz Ol ekranında elektronik formlar aracılığıyla toplanan <strong>kimlik</strong> (isim, soyisim) ve <strong>iletişim</strong> (telefon numarası, e-posta adresi, adres bilgisi) bilgilerinize ilişkin kişisel verileriniz; acente adaylarının başvuru süreçlerinin yürütülmesi, i̇letişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, mal/hizmet satın alım süreçlerinin yürütülmesi ve sözleşme süreçlerinin yürütülmesi amaçlarıyla sınırlı olarak, Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan ‘<em>’Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması’’ ve ‘‘İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’ </em>hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>Acentemiz Ol ekranında işlediğimiz kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> D. <span style="text-decoration:underline;">Girişimci Kurye Başvuru İşlemleri </span></strong></p>
+
+<p>Girişimci Kurye Ol ekranında elektronik formlar aracılığıyla toplanan <strong>kimlik </strong>(isim, soyisim, T.C. kimlik numarası), <strong>iletişim </strong>(telefon numarası, e-posta adresi, adres bilgisi), <strong>özlük </strong>(çalışma bilgileri, araç bilgileri) ve <strong>mesleki deneyim</strong> (iş tecrübesi) bilgilerinize ilişkin kişisel verileriniz; girişimci kurye adaylarının başvuru süreçlerinin yürütülmesi, i̇letişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, mal/hizmet satın alım süreçlerinin yürütülmesi ve sözleşme süreçlerinin yürütülmesi amaçlarıyla sınırlı olarak, Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan ‘’B<em>ir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması’’ ve ‘‘İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’</em> hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>​Girişimci Kurye Ol ekranında işlediğimiz kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> E. <span style="text-decoration-line:underline;">Aracını Kirala İşlemleri</span></strong></p>
+
+<p>Aracını Kirala Formu ekranında elektronik formlar aracılığıyla toplanan <strong>kimlik</strong> (isim, soyisim) ve <strong>iletişim </strong>(telefon numarası, e-posta adresi, il/ilçe bilgisi) ve <strong>müşteri işlem</strong> (kiralanan araç ve kiralama şekline ilişkin bilgiler, mesaj içeriği) bilgilerinize ilişkin kişisel verileriniz; araç kiralama başvuru süreçlerinin yürütülmesi, i̇letişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, mal/hizmet satın alım süreçlerinin yürütülmesi, mal/hizmet üretim ve operasyon süreçlerinin yürütülmesi ve sözleşme süreçlerinin yürütülmesi amaçlarıyla sınırlı olarak, KVKK’nın 5. maddesinin 2. fıkrasında düzenleme altına alınan ‘‘Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması’’  ve ‘‘İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’ hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>Aracını Kirala Formu ekranında işlediğimiz kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> F. <span style="text-decoration:underline;">Reklam Başvuru İşlemleri</span></strong></p>
+
+<p>Reklam Ver Formu ekranında elektronik formlar aracılığıyla toplanan <strong>kimlik </strong>(isim, soyisim, T.C. kimlik numarası) ve <strong>iletişim</strong> (telefon numarası, e-posta adresi) bilgilerinize ilişkin kişisel verileriniz; reklam başvuru süreçlerinin yürütülmesi, iletişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, mal/hizmet satış süreçlerinin yürütülmesi ve sözleşme süreçlerinin yürütülmesi amaçlarıyla sınırlı olarak, KVKK’nın 5. maddesinin 2. fıkrasında düzenleme altına alınan ‘‘Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması’’ ve ‘‘İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’ hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>Reklam Ver Formu ekranında işlediğimiz kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> G. <span style="text-decoration:underline;">​Kargo Gönderi Takip ve Bildirim İşlemleri </span></strong></p>
+
+<p>Gönderi Takip ve Hasar/Kayıp Bildirimi ekranlarında elektronik formlar aracılığıyla toplanan <strong>müşteri işlem</strong> (kargo gönderi numarası, sipariş takip numarası) bilgilerinize ilişkin kişisel verileriniz; iş faaliyetlerinin yürütülmesi/denetimi, mal/hizmet satış sonrası destek hizmetlerinin yürütülmesi, müşteri memnuniyetine yönelik aktivitelerin yürütülmesi amaçlarıyla sınırlı olarak, Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan<em> ‘’Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması’’ ve ‘‘İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’</em> hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>Gönderi Takip ve Hasar/Kayıp Bildirimi ekranlarında işlediğimiz kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> I. <span style="text-decoration:underline;">İletişim Faaliyetleri </span></strong></p>
+
+<p>Elektronik formlar, telefon görüşmeleri, e-postalar, çağrı merkezi görüşmeleri aracılığıyla toplanan <strong>kimlik</strong> (isim, soyisim, T.C. kimlik numarası), <strong>iletişim</strong> (e-posta adresi, telefon numarası), <strong>müşteri işlem</strong> (talep, öneri ve şikayet bilgileri, mesaj içeriği, kargo gönderi numarası, sipariş numarası, kargo gönderi bilgileri, cari numarası) ve <strong>görsel ve işitsel kayıt</strong> (çağrı merkezi ses kayıtları) bilgilerinize ilişkin kişisel verileriniz; talep/şikayetlerinize ilişkin verileriniz arayan kişiye doğru hitap edilebilmesi, kargo gönderim ve teslimat süreçlerine ilişkin etkin bir müşteri hizmeti sunulması, iletişim faaliyetlerinin yürütülmesi, talep/şikayetlerin takibi, talep konusu hakkında destek hizmetlerinin yerine getirilmesi için gerekli araştırma/incelemelerin yapılması, tarafınıza bilgi ve destek hizmetlerinin sunulması, müşteri ilişkileri yönetimi süreçlerinin yürütülmesi, iş süreçlerinin iyileştirilmesine yönelik önerilerin alınması ve değerlendirilmesi, müşteri memnuniyetine yönelik aktivitelerin yürütülmesi, ileride doğabilecek uyuşmazlıklarda delil olarak kullanılması amaçlarıyla sınırlı olarak Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan ‘’İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’ ve ‘’Bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması’’ hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>​Kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> J. <span style="text-decoration:underline;">İnternet Sitesi Destek, Geliştirme ve Bilgi Güvenliği </span></strong></p>
+
+<p>MNG Kargo İnternet Sitesi’nde sunulan hizmetler kapsamında destek ve geliştirme faaliyetleri ile bilgi güvenliği süreçlerinin yürütülmesi için bilgi güvenliği sistemleri ve elektronik cihazlar aracılığıyla <strong>​​işlem güvenliği </strong>(internet sitesine giriş yapılan cihaza ilişkin bilgiler, internet sitesine giriş-çıkış bilgileri, kullanıcı adı, IP adresi) bilgileri toplanmaktadır. Toplanan kişisel verileriniz; bilgi güvenliği süreçlerinin yürütülmesi, denetim/etik faaliyetlerin yürütülmesi, saklama ve arşiv faaliyetlerinin yürütülmesi, veri sorumlusu operasyonlarının güvenliğinin temini, yetkili kişi, kurum ve kuruluşlara bilgi verilmesi ve faaliyetlerin mevzuata uygun yürütülmesi amaçlarıyla sınırlı olarak Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan ‘’Kanunlarda açıkça öngörülmesi’’, ‘’Veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması’’ ve ‘’İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması’’ hukuki sebepleri uyarınca işlenmektedir.</p>
+
+<p>​Kişisel verilerinizi yukarıda sayılan amaçlar dahilinde KVKK’nın 8. maddesine uygun olarak ve gerekli teknik ve idari tedbirleri alarak gerekmesi durumunda hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarmaktayız.</p>
+
+<p>   <strong> K. <span style="text-decoration:underline;">Hukuki Süreçler</span></strong></p>
+
+<p>Hukuki süreçlere konu olması durumunda, MNG Kargo İnternet Sitesi’nde çeşitli hizmetlerin sunulması sırasında toplanan kişisel verileriniz; faaliyetlerin mevzuata uygun yürütülmesi, hukuk işlerinin takibi ve yürütülmesi, yetkili kişi, kurum ve kuruluşlara bilgi verilmesi amaçlarıyla sınırlı olarak Kanun’un 5. maddesinin 2. fıkrasında düzenleme altına alınan ‘‘Veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması’’ ve ‘’Bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması’’ hukuki sebepleri uyarınca işlenmekte ve hukuki yükümlülüklerimizi yerine getirebilmek için yasal düzenlemeler ve mevzuat gereği yetkili kamu, kurum ve kuruluşlarına aktarılmaktadır.   </p>
+
+<p> </p>
+</div>
+
+<p><strong> İlgili Kişi Olarak Kişisel Verilerinize İlişkin Haklarınız Nelerdir?</strong></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;"><span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Kişisel verilerinize ilişkin;</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Kişisel verilerinizin işlenip işlenmediğini öğrenme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;"><span> </span>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Kişisel verilerinizin eksik veya yanlış işlenmiş olması halinde bunların düzeltilmesini isteme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">KVKK mevzuatında öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Eksik veya yanlış verilerin düzeltilmesi ile kişisel verilerinizin silinmesi veya yok edilmesini talep ettiğinizde, bu durumun kişisel verilerinizi aktardığımız üçüncü kişilere bildirilmesini isteme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;">• <span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız halinde bu zararın giderilmesini talep etme</span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;"><span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">haklarına sahipsiniz.</span></p>
+
+<p> </p>
+
+<div class="desc desc-cms">
+<p><strong>Haklarınızı Nasıl Kullanabilirsiniz?</strong></p>
+
+<p>Kişisel verilerinizle ilgili başvuru ve taleplerinizi dilerseniz <a href="https://www.mngkargo.com.tr/kvkk-basvuru-formu"> https://www.mngkargo.com.tr/kvkk-basvuru-formu</a> adresinde yer alan ‘‘<strong>KVKK Başvuru Formu</strong>’’ aracılığıyla;</p>
+
+<p>• Daha önce MNG Kargo’ya bildirilen ve MNG Kargo’nun sisteminde kayıtlı bulunan elektronik posta adresi üzerinden <strong style="color:blue;">kisiselveri@mngkargo.com.tr</strong> adresine elektronik posta göndererek,</p>
+
+<p>• Geçerli bir kimlik belgesi ile bizzat başvurarak,</p>
+
+<p>• Islak imzalı ve kimlik fotokopisi ile Ayazağa Mahallesi Azerbaycan Caddesi 1B Bulvar Ofis No:109/B Sarıyer/İstanbul adresine göndererek,</p>
+
+<p>• Mobil imza veya güvenli elektronik imza ile imzalayıp <strong style="color:blue;">kisiselveri@mngkargo.com.tr</strong> adresine adresine e-posta göndererek,</p>
+
+<p>•Kayıtlı elektronik posta (KEP) adresi ve güvenli elektronik imza ya da mobil imza kullanmak suretiyle <strong style="color:blue;">mngkargo@hs02.kep.tr</strong> kayıtlı elektronik posta (KEP) adresine göndererek</p>
+
+<p>MNG Kargo’ya iletebilirsiniz.</p>
+
+<p>Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ uyarınca, İlgili Kişi’nin, başvurusunda isim, soyisim, başvuru yazılı ise imza, T.C. kimlik numarası, (başvuruda bulunan kişinin yabancı olması halinde uyruğu, pasaport numarası veya varsa kimlik numarası), tebligata esas yerleşim yeri veya iş yeri adresi, varsa bildirime esas elektronik posta adresi, telefon numarası ve faks numarası ile talep konusuna dair bilgilerin bulunması zorunludur.</p>
+
+<p>İlgili Kişi, yukarıda belirtilen hakları kullanmak için yapacağı ve kullanmayı talep ettiği hakka ilişkin açıklamaları içeren başvuruda talep edilen hususu açık ve anlaşılır şekilde belirtmelidir. Başvuruya ilişkin bilgi ve belgelerin başvuruya eklenmesi gerekmektedir.</p>
+
+<p>Talep konusunun başvuranın şahsı ile ilgili olması gerekmekle birlikte, başkası adına hareket ediliyor ise başvuruyu yapanın bu konuda özel olarak yetkili olması ve bu yetkinin belgelendirilmesi (vekâletname) gerekmektedir. Ayrıca başvurunun kimlik ve adres bilgilerini içermesi ve başvuruya kimliği doğrulayıcı belgelerin eklenmesi gerekmektedir.</p>
+
+<p>Yetkisiz üçüncü kişilerin başkası adına yaptığı talepler değerlendirmeye alınmayacaktır.</p>
+
+<p>Kişisel verilerinizin işlenmesi hakkında ayrıntılı bilgi ve KVKK’nın 11. maddesi kapsamındaki haklarınız için <a href="https://www.mngkargo.com.tr/genel-aydinlatma-metni" style="color:orange;" target="blank">Aydınlatma Metni</a> &#39;ni inceleyebilirsiniz.</p>
+
+<p><strong>Kişisel Verilerinizin İşlenmesine İlişkin Talepleriniz Ne Kadar Sürede Cevaplanır?</strong></p>
+</div>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;"><span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Kişisel verilerinize ilişkin hak talepleriniz değerlendirilerek, bize ulaştığı tarihten itibaren <span style="text-decoration:underline;">en geç 30 gün</span> içerisinde cevaplanır. </span></p>
+
+<p style="margin-bottom:10.0pt;text-align:justify;line-height:150%;"><span lang="tr" style="font-family:&#39;interLight&#39;,serif;color:#858585;">Başvurunuzun olumsuz değerlendirilmesi halinde gerekçeli ret sebepleri başvuruda belirttiğiniz adrese elektronik posta veya posta yolu başta olmak üzere tarafınızca seçilen usullerinden biri ile gönderilir.</span></p>
+</div>
+</div>
+</div>
+
+<ul class="formUl active">
+	<li class="formLi">
+	<div class="formTitle">Ad Soyad *</div>
+
+	<div class="inputBox"><input class="inputText form_nameSurname" id="form_nameSurname" name="form_nameSurname" required="" type="text"/></div>
+	</li>
+	<li class="formLi formLiTwo">
+	<div class="formTitle">TC. Kimlik Numarası</div>
+
+	<div class="inputBox"><input class="inputText form_tcno" id="form_tcno" maxlength="11" name="form_tcno" required="" type="tel"/></div>
+	</li>
+	<li class="formLi">
+	<div class="formTitle">Cep Telefonu *</div>
+
+	<div class="inputBox"><input class="inputText form_phone" id="form_phone" maxlength="10" name="form_phone" placeholder="5xx xxx xx xx" required="" type="tel"/></div>
+	</li>
+	<li class="formLi formLiTwo">
+	<div class="formTitle">E-Posta *</div>
+
+	<div class="inputBox"><input class="inputText form_email" id="form_email" maxlength="50" name="form_email" required="" type="text"/></div>
+	</li>
+	<li class="formLi formliPassword">
+	<div class="formTitle">Şifreniz *</div>
+
+	<div class="inputBox"><input class="inputText form_password2" id="form_password2" maxlength="50" minlength="8" name="password" passwordcheck2="passwordCheck2" required="" type="password"/>
+	<div class="questionCircleBox"><span class="tooltipBox">Şifreniz en az 2 küçük harf, 2 büyük harf, 2 rakam ve 2 özel karakter olmak üzere en az 8 karakterli olmalıdır. Kullanılabilecek özel karakter: <b>, . ! ? \ *</b></span></div>
+	</div>
+	</li>
+	<li class="formLi formLiTwo">
+	<div class="formTitle">Şifreniz Tekrar *</div>
+
+	<div class="inputBox"><input class="inputText form_password2" id="form_confirmpassword" maxlength="50" minlength="8" name="password" required="" type="password"/></div>
+	</li>
+	<li class="message-text2"> </li>
+	<li class="formLi formLiFull">
+	<div class="linkBox"><a class="memberButton" href="javascript:;"><span>Üye Ol</span></a></div>
+
+	<div class="errorBox">Lütfen doldurulması mecburi alanları doldurunuz.</div>
+	</li>
+</ul>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8FqAUj9mxxhEjdYwdpqAYMHBhP-pkkYyBLGi3JBvyQul8VRIJSDMNthL4tVnSOvBLs6H4vLF8AOpy105HuU7x0Zo6RlUgSen6yKpDQ8xqIb5JaZoSKoue8UXLLu7Rx53hnRqhx0uMvutfG1DROgbtbk"/> </form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="right col-xl-6">
+<div class="imgBox"><img alt="" imgsrc0="/assets/img/uyeGirisi.png" imgsrc1="/assets/img/uyeOl.png" src="/assets/img/uyeGirisi.png"/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="modalBox warningBox membershipActivation" id="membershipActivation">
+<div class="top">
+<div class="title">Üyelik Aktivasyon</div>
+
+<div class="desc">
+<p>Hesap oluşturma işlemini tamamlamak için cep telefonunuza gelen tek kullanımlık SMS kodunu giriniz.</p>
+</div>
+
+<div class="smsBox">
+<div class="smsCode">
+<form action="" autocomplete="off" class="memberSmsForm" id="memberSmsForm" method="post"><input name="__original_url" type="hidden" value="https://mngkargo.com.tr/uyelik"/> <span>SMS Kodu</span> <input class="inputText form_smscode" id="form_smscode" maxlength="6" name="form_smscode" required="" type="text"/> <input name="_cd" type="hidden" value="uyelik"/>
+<div class="questionCircleBox"><span class="tooltipBox">Girmiş olduğunuz SMS kodu hatalı</span></div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8FqAUj9mxxhEjdYwdpqAYMHBhP-pkkYyBLGi3JBvyQul8VRIJSDMNthL4tVnSOvBLs6H4vLF8AOpy105HuU7x0Zo6RlUgSen6yKpDQ8xqIb5JaZoSKoue8UXLLu7Rx53hnRqhx0uMvutfG1DROgbtbk"/> </form>
+</div>
+
+<div class="smsTime"><span>Kalan Süre:</span></div>
+</div>
+
+<div class="linkBox"><a class="againPasswordLink" href="javascript:;"><span>Tekrar Şifre Gönder</span></a> <a class="verificationRegisterMemberLink" href="javascript:;"><span>Doğrula</span></a></div>
+</div>
+</div>
+
+<div class="modalBox warningBox membershipActivation membershipActivation2" id="LoginActivation">
+<div class="top">
+<div class="title">Üye Girişi</div>
+
+<div class="desc">
+<p>Üye girişi yapabilmek için cep telefonunuza gelen tek kullanımlık SMS kodunu giriniz.</p>
+</div>
+
+<div class="smsBox">
+<div class="smsCode">
+<form action="" autocomplete="off" class="memberSmsForm" id="memberSmsForm2" method="post"><input name="__original_url" type="hidden" value="https://mngkargo.com.tr/uyelik"/> <span>SMS Kodu</span> <input class="inputText form_smscode" id="form_smscode2" maxlength="6" name="form_smscode" required="" type="text"/> <input name="_cd" type="hidden" value="uye_girisi"/>
+<div class="questionCircleBox"><span class="tooltipBox">Girmiş olduğunuz SMS kodu hatalı</span></div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8FqAUj9mxxhEjdYwdpqAYMHBhP-pkkYyBLGi3JBvyQul8VRIJSDMNthL4tVnSOvBLs6H4vLF8AOpy105HuU7x0Zo6RlUgSen6yKpDQ8xqIb5JaZoSKoue8UXLLu7Rx53hnRqhx0uMvutfG1DROgbtbk"/> </form>
+</div>
+
+<div class="smsTime"><span>Kalan Süre:</span></div>
+</div>
+
+<div class="linkBox"><a class="againPasswordLink" href="javascript:;"><span>Tekrar Şifre Gönder</span></a> <a class="verificationLoginLink" href="javascript:;"><span>Doğrula</span></a></div>
+</div>
+</div>
+
+<div class="modalBox warningBox warningSucces memberSucces" id="memberSucces">
+<div class="top">
+<div class="iconBox"> </div>
+
+<div class="title">Üyelik işleminiz başarıyla gerçekleştirilmiştir.</div>
+
+<div class="linkBox"><a class="emailLink" href="{{.URL}}"><span>Giriş Yap</span></a></div>
+</div>
+</div>
+
+<div class="modalBox warningBox warningError memberError" id="memberError">
+<div class="top">
+<div class="iconBox"> </div>
+
+<div class="title"> </div>
+
+<div class="linkBox"><a class="emailLink" href="javascript:$.fancybox.close();"><span>Tekrar Dene</span></a></div>
+</div>
+</div>
+
+<div class="modalBox warningBox warningError loginError" id="loginError">
+<div class="top">
+<div class="iconBox"> </div>
+
+<div class="title"> </div>
+
+<div class="linkBox"><a class="emailLink" href="javascript:$.fancybox.close();"><span>Tekrar Dene</span></a></div>
+</div>
+</div>
+
+<div id="overlay">
+<div class="cv-spinner"> </div>
+</div>
+</main>
+
+<link href="/assets/css/components/private-permissions/privatePermissions.min.css?v=qMi6fnw-PFuR7UvVEG4VmmEgS_fhCVjSZIIsqDZWKk4" rel="stylesheet"/>
+<link as="script" href="/assets/js/master.min.js?v=uKaQIpERydeRidWcD8S0k7D2Qrx_0jiJ9XYtNNXkFwQ" rel="preload"/><script src="/assets/js/master.min.js?v=uKaQIpERydeRidWcD8S0k7D2Qrx_0jiJ9XYtNNXkFwQ" type="text/javascript"></script><script src="https://www.google.com/recaptcha/api.js?render=6LcJyrMjAAAAAJO9WuZrLqfaYKukc1jbuXzA0GFe"></script><script src="/assets/js/components/mngLoadingSpinner.js?v=WJ9Wp0veCo3U7PW1HI8IW_Q0HANtmD62dU1TMEKswiY" type="text/javascript"></script><script>
+        $('.frm-ggl-rc3').prepend('<input id="site-key" type="hidden" value="6LcJyrMjAAAAAJO9WuZrLqfaYKukc1jbuXzA0GFe">');
+
+      
+    </script>
+</body></html>

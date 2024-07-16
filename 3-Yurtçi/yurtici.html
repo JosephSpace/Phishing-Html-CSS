@@ -1,0 +1,286 @@
+<!DOCTYPE html><html><head>
+	<base href="https://bireysel.yurticikargo.com/"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Yurtiçi Kargo - Bireysel Üye Girişi</title>
+
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA21BMVEX///8AabPwfQD///38//8AarPxfAD//v8AZrL///sAYbEAZbIAXrAAY7HwegDvcwDwdgDxcQAAW68AW7GyzOIAZbWSttQAXq0AWar2+/nvhBTo8vUoeLn37dwAbbPQ4evxs3/4+O/yo2L1wJM6f7uLr9G40OP39Ont9fbc6O724cnwnVhSjcGjwdtjl8b259L00a50o8xemMryrnDymk722bxKhbyAqM3xizXzyaZyoMz0xJrH3OnvhCYverbxrnMAVbLvkTvxvIb2v5bwsnWrxt/P3Op8n832sYTRoEeFAAAQQUlEQVR4nO1dCXfiOBK2kWwsY4MhByEcuQiBhFzTSeikSfd2ZtM7//8XrSQnYBmrJIMd9u3T93bevH0TH5+rVKpLhWUZGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgY/M8CIfrPx7+rpT+N0AcRRP+37vUIc+S6ZrK7f//XdHq/P+qu+VhN4Mnu+ct0+tfsejRGFlrvc5LHbw+nZ48kFon6z62jl8FBEIa1mhf6QfvpXeuyNYDQZNZr+WHo2bUwDLzhdWeNu1Tx7fdmVK9HzcNnrH5VjKzd3oFfs5fwgt5RORQ7LzuUXAJ+6zz/18RnDbdC4bpu85tSU6uoOw0827EF1GpH61EAgbq9UHwQ/X9+r5uPIj65iglSipVKs6+8YDII7RU4Xq2E1Yh6tdVH2eFgnIMixreH0QdBirp7orgYjcOsp1JNzfVcPcz8zEeFU31zQ/CP5pJfpflwglWveZ8hwZhir1PstoGOguwnOTu6eorwyWlCgG7zGCttaUfCj33aIdmcVvJRPU/ypNZc9x79w2gpQDe609gQu5LvGmvP2jvyKqroPltHmQwnevfAz436kl/9VW1kKDoD2YelCF4K9G/mB47sOUO9O5DTRkKADboEda5C+y05Q6c924STALmO2oGWkuL+a1JDm8cd3UU09aXflq6Q62IUFcl11PZf1NdXEX5OmJhKJXrU167Oz+zt4uP77hbBsIrmgfQ71nQsaedXI8nvta/cJJZAE9l+EVMcWQVwJPLlHuyrHUvc/53UUN0luMARsBTt2s7m/huko3aPqN4WWXfN+kJF3UrjLR8/ius2QNHxNG05gPlO2vFdoD1SXIswOaZuzIJhPXrMTdAiLxBFzxmvx2uBzkC+CJUeG774HtEoYrHLV/pr7GAEDYG16NjOOkHcAsh6kd3dcXyFghD8GC13+UqlcXWyjl1A1tgBNn4nHGrvPVl3pzoqw9654sXwcSOxSbjNN42INwtVqVccg3r/a5Hjbwm4TV6o+HIXDwkbSlX0MccmkcZuywF2/uBm7bwGupGrR2sXvBQ/1pMaGuk5orL3QDNQisFsPYrIGkmtmFN7gl7Ist4SGko3iSvlvgKDPMn3LIoD9cac+aIdTyZCxzn4I78nsk4exCV4thk/9i6ZOYalFK/XkCKybjyZ8juQQ0rwZVJDXbYLbhyuoon0ZWKKqr0560VHO9J7OgGQJ+mcRa67FGH0vb+pBBnQCHLfqPuRP8XYAXah9r5cKU6uko6229x0CX4AoX3Q2th+bhd1Kld8ryfVOnxZSYZKbuMMk4IyKugGtDaenTPFODqQ32xnni1Busv/iCoJI1qvP1pFxDfx3Ts9MJTyBrlc1DF0q2n2NVWrc9oQYt3Xi0I0dPFSe4D7Rh3lXg4XlfwFGOeWTB1uk+k06oieFpvxo04kqKdOCGzSaezK43rbP89WPPycdLRdt/GjUAEykGtg7TATf6O7JMa+XB0cSbhCvjWTAlwrFlRjBi5F23shWvEZAuyo3d7N0D2C+6KGRt8viiYX4ymEd36JgqWwC2yu3lNWCg/fCaFgJTolG4QSEMZQlpilqK81btKF7vCvjLgX42+CDeWOaEmFWmsCOqiepwh6LLZ9TQFdD+9XLqji/ndRQ+uXZSzBz/eD3TfH9keq7Mo7lPmppXfVKsZ3bl3YBYtxROU4h16QoqVwUbs1QNHb1+mLCT4WbGileZozI5obCveNaiqYQSJPch11Vh1Snk5LLsHoR4ncYqiCRdtzgFw8uZZbY4c6pKln4ceKaEPpEqyWZWMWTyVdH6TohAO5/zauybcbZ2+aspBiOi12RMvmxzGHIynHH3Yk74GeoI8Tig4pvvgtEmz+2ig7mwPoGnArKTxfViK+Br6N558LF+FLN6mh1BF9LtnEJCFNVX+gfZN5WRfKn9cE5Ub4rZFMVlRoLPg1GhqDQLl+hmC26l0iNIQ8omC0JFDFFw+pJfi7JEc0Gwgp3DdW+1u9CtJR20uW7PHloWBDK41vpDQ/LRvoyIcS4azQv+KiTkLoq7SWmR4s9v4wR7T4WFANIBkYYydVIiZDyI76959/HCd8BT/Nvd08I5obyDqHDSrdNJIJJWTtw0t34ZDi20PBD3W/eAkuQaaw+2Z7taT/1gVd9mCh0/i5kSjrsl3wWzEZ0TWAe3Am3HG8ZeoarLTaXu/zD8mVaEPLSMfoo6sQouN/Vt6ojsL1K67QqIpvXwVHm3qll+UFuxoYKdw3rx074UjRt+LffCR4nsVdnhK8yNeTXjj25VVqjlbcVYQIHI+E9EMg1j8phoLUil5uU4AUhLyAe5wd8tIi01FgxTr+Pj/v0H+tV9IM+2U1zutCJRz+7haZBNKmGZvVPNhml06nxVr6sF0dZQBbNaivyV6e/AQFHYysqkV+iW7MpxCvCmxkXQ/oKAD2DG8c+wYQQe+JfoUTMVkhUNzyUrSs95ZUQj5rQkUTuLramiAL/47cLBEyir/LzjypMZO2oe6xiA/LG2QZwhlbg5kqyuGy1MWWVZXIyhA04qNvdg6XVkP6FfDVqpFZUqwf5mkZLQNI0sYcN1TAMZPT4n0c3wGGLLzfpB+oEGR5LI49wBYmZADXAfi5BvxQly3DD00tpZSmD4Sy2lADFtIiWEc/HFLrTWJJkxS3uxYzWpn9GStggE3G1HGNXXPcb8AMaQx1t+W1uJ8WVe0n4SsUjpJ3PsOrNzXFv7cQ5y+BUklix/YniIpnBldU/UW6Cv8GbQ1D45iu6+1RnKQYhvusv/gIDj28wecbI3LyqliKNBb+tcVICqUY1obU1SLAYRiO2GuNgaV+2xLRVcFn5vIgFQvXJsyZlDs7sQinyYWFTw4ViupWooftLcX7PUE419SOEkUBx96ZJK0jwher8eGKFL+rzoWWha6wrYdT3qKlyKf6K2fDTtQU64cX655i3ww3CYaOHY75YRhF883KWQ1kKRWVqWp/G7vGKGkznRaLaK15G841rpbs6VUXaor1yu2XW1Q0aSdrGDXe/AWez7Q/HdI0RaSxFiuNHMfviiFIhslD+zWHDXywgANbsaAlLbcaUnQbX+vBISKeND/gPd9zRd0m/EtyN0oRijJiil9bihJP9ji8qQmp7KjnyVuKNaTIPbgvIyh2qXm8jxa9AC0X7Du0V+unixvii4oWxa9SVDQV9voDHu+psv3OABIB6ispum5DPdejGH5id4UTnlMzhzqKIr+0VT1G1eprKGr00MFfYVInSYvi1FiRDKn6wqhDCufq9RT1a9KMnZ6gffzUBRkpisM8dgQZIkutqLxPuPSqRkpa7Ox1FUEHDWKCM4330lHUeqXkPkxk7QZJx6X2xN2UG8Uq9BxZT1gSuF+vKDfG0j04cTaI0+Ll0JGipGgH75aO60wpqqXICowlgnpryQUXNxuMYX+b7ZialRbcB3OoMdzmY4kWVUyF1mjEThf+DZx7sp3gj+79qRQ1KDZ0Znqth7mwCO2wyxjuKuJ6O8zu6ctCFd/qKGrjrJzym3jG1XMOeJP+WEHQcQCHNAO3FaUYqXtzXApF8dyLs3fDcws3cIM0PzuZY9kgfJtR+k4xZG19JVjUVKXCY8VeC+0q+vhtb5DvazOK6rVYaVwVn0lNjSGIM59dlQQdvZlBCVQtrbUY5R3aogLCYo6CBoXUm7Gmip7TjwRHzkepFbXCndRCGaZHucVeCnRg6+NLrDHtBVmXOorK0ozFgYhcvDavFKq63PjZyXWAtSi6boEeXFfUxrjjAil11K7pOKSZFBsailqvFNYihsRm34/ExTtcpLCZQ7qm84FSk2hkUizMSU1NcTxg5QfUBU/Q8i+xwShCfAkX+j8oNnRmCSqRKoY6cVM+fBiGQ3WoTUGxobMWGz+szTNUY1vcKIZcR8GDBvxL6EyXgyg+apmbxtmmDFdOgPKzeIoG2ZjhpkOztCxqpfmLbBZqpI48eR/1FfAwDCcYrBZicj5Zk2J0utlaTAnLG/LmAcVJL4Y8ExckFPGjzlpk3YwblN/Slfl4pPDEVwX2dguYGaQNSlGDIffg1n5aKlu/w6cDkCfoaG8s60ImuiI9iu4GE0FG4ijVMO5oUoyu4SLMObZaSvFOS1Hrh+u1+pHunqCNHm8ftSaq5Bq1o+s5pBnQVNR6/XadBFVKGz0+uRGTJ7U/utnsQRGP8mbbhKJSD26NjTHVru3zYA+pjlzYi1MXhYApqpYU8zdsorkY/u3F9l9jr/eeCk0U4bv0uZNsMTZ/5JMiGg/E926zhASyFIfzGQ4mhTJEUFd4Eo2/c1EkqXKEz2cJIvAwTAye4iiW4rMmxTy1cJLaEj6CQnguJkfN29QhXYWmFFmhWPvjTlJ5wrjFmQz3smklsHoeeHMgvbXoUidV14oT0Vtzgng4gKKJOxZ2GflodhZah6LbfNDKwVWtF1Eb935y3xZu4o4JwiX7tUHws9amQT04rUxqOpcd8sSFWOLORpge5lEMEDM3Wj5qpf6qLhSTcSrJ9JG4gA9sxVCV7DcgqaeovBauuhW1J0mGzl68g2vYUTs1zKNQVNlcAi0/PLoFb0SoPRHMjBfyQIEoTnKzb+EN1syQaoFLUcdJZT8mADH8k5JV653H9Rp21AmUk782Az7T2/rd6E5+k5Vpv3F1RXXQgAubd+yXS/GHVrxYqQBOKpqmf4epy3YK1UEDDv+o7I4exH7BSs+Dk6UZWW5NYMhHBiOkOGjAkTFdrhyKWlLM7mZEK8FRGFcA58ocPkPxDmkG9CmeZVy9ehg9No5YY6/fPEOqB6Rrblh/+CrSJwpac7YIVWOTObzB1wwLqCL8pkexfniSzt2gdAdXGB8CUfU4c+Qu2a/PkUpRS4jRcYof6qY2is9OCkULMMeefmfQ5sDq44uxnqYCjZWBXp8NW4rTMBx+9wtPtuD0+EiZEJ+Fy9B5WxRh8Jn1VNcK+fnDr4QexbpYtZmLIZOzN/zMzA8kvJJ//dWzx7Qouq/JkH/lWE9rkTJTM1znpwQ2BP63ei269cTSod5aSkeX+ZahimDBGVJNisfKjg2B4XVb9Na8p+V/VFqadrEZUk2G6N+qfdE9XLwXmQSpH2LyE12Tc0V+5isc0gxU8bcmKEU3MdBnZYbjwXviVh1wEkTJcS8EqqigDKPlibCjVCo7FA4lo2so+nWCo23NzEH4F0gxseOvjEgQfxUFASMQawejLfFjgCi6yejiXLQlrVHKQRk7Moq1sIwfRNYHEPVHD4ndUJwqHr6k1A5Z3V6YNb7LaQ9LSx/qAbGxfRkc3VQLqpCc8X9mzJMd3+ysijFs7ZOtjXH8fDNMzqLV8Qz15qnwZmgefL5/beclu7oxGrZCsertnX9JVK/GydlrU/jBnaj5PV0SRn96bT/0/MB/msssI5nfDNqB74cUQeDcjDpbnzsWA1Uxufz1GjWiesTQODx9XJ0vich8f/af2Tu4rAie7NK/up/t7046257/lwIm/cfnt3/++efs+fJky+Mly8T/LzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA038F3QtKTs9tp9SAAAAAElFTkSuQmCC"/>
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/assets/css/main.css?v=14" rel="stylesheet" type="text/css"/>
+	<link href="/assets/css/login.css?v=14" rel="stylesheet" type="text/css"/>
+</head>
+<body class="login-page">
+<div class="overlay"> </div>
+
+<div class="wrapper">
+<div class="navbar" id="slide-nav" role="navigation">
+<header>
+<div class="container-wrap">
+<div class="header-bottom">
+<div class="space left">
+<div class="navbar-header"><a class="navbar-toggle"> <svg height="12" viewBox="0 0 17 12" width="17" xmlns="http://www.w3.org/2000/svg"> <path class="menu" d="M1 7V5h15v2H1zm0-2h15c1.333 0 1.333 2 0 2H1C-.333 7-.333 5 1 5zm0 7v-2h15v2H1zm0-2h15c1.333 0 1.333 2 0 2H1c-1.333 0-1.333-2 0-2zm0-8V0h15v2H1zm0-2h15c1.333 0 1.333 2 0 2H1C-.333 2-.333 0 1 0z" fill-rule="nonzero"></path> </svg> </a></div>
+</div>
+
+<div class="middle">
+<div class="container-middle">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-10 header-logo"><a href="/"><img alt="Yurtiçi Kargo" class="logo" height="44" src="/assets/img/logo.svg" width="178"/></a></div>
+</div>
+</div>
+</div>
+
+<div class="space right"> </div>
+</div>
+</div>
+</header>
+
+<div id="page-content">
+<section class="middle-content">
+<nav>
+<div class="container-wrap">
+<div class="container-wrap-content">
+<div class="space left"> </div>
+
+<div class="space right"> </div>
+</div>
+</div>
+</nav>
+
+<div class="banner subpage-banner"> </div>
+</section>
+</div>
+
+<section>
+<div class="container-wrap-content">
+<div class="space left"> </div>
+
+<div class="middle">
+<div class="login-wrap col-lg-10 col-md-12 col-sm-12 col-xs-12">
+<div class="login-form">
+<div class="all-radius login-form-wrap">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h5 class="title-blue">Üye Girişi</h5>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<p class="main-content-bold">Yurtiçi Kargo Bireysel İnternet Şubesine hoşgeldiniz.</p>
+</div>
+
+<div class="login-first-step">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="form-group label-floating is-empty"><label class="control-label" for="input-username">E-posta/T.C Kimlik/ GSM No</label> <input autocomplete="off" class="form-control all-radius" data-validate-type="required" id="input-username" maxlength="50" minlength="3" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="text"/></div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="form-group label-floating is-empty"><label class="control-label" for="input-password">Şifre</label> <input autocomplete="off" class="form-control all-radius" data-validate-type="required" id="input-password" maxlength="50" minlength="6" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="password"/></div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="form-group">
+<div class="radio radio-primary check"><label><input id="remember-storage" name="remember-storage" type="checkbox" value="true"/> Beni Hatırla </label></div>
+</div>
+</div>
+</div>
+
+<div class="sms-code-wrapper" style="display:none;">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<p class="main-content-bold" id="sms-reference-code"> </p>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="input-sms-wrapper">
+<div class="form-group label-floating is-empty"><label class="control-label" for="input-username">SMS Kodu</label> <input autocomplete="off" class="form-control all-radius" id="input-sms-code" maxlength="6" minlength="6" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number"/></div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<p class="main-content-bold" id="countdown"> </p>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 resend-sms" style="display:none">
+<div class="form-group"><button class="btn all-radius" id="btn-send-sms-again" type="button">Tekrar Gönder</button></div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 verify-sms">
+<div class="form-group"><button class="btn all-radius" id="btn-validate-sms" type="button">Doğrula</button></div>
+</div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 login-button">
+<div class="form-group"><button class="btn all-radius" id="btn-login" type="button">Giriş</button></div>
+</div>
+
+<div class="login-first-step">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<p class="main-content-bold">Bir hesabınız yok mu?</p>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a class="member" href="{{.URL}}"><span>Üye Ol</span></a></div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a class="member" href="http://{{.URL}}" id="btn-forgot-password"><span>Şifremi Unuttum</span></a></div>
+</div>
+</div>
+</div>
+
+<div class="login-info">
+<h6>İçeride neler var?</h6>
+
+<p class="info">Bireysel İnternet Şubesini ve onun hayatınızı kolaylaştıracak özelliklerini keşfedin!</p>
+
+<h6><a href="{{.URL}}">Demo Girişi</a></h6>
+</div>
+</div>
+</div>
+
+<div class="space right"> </div>
+</div>
+</section>
+
+<div aria-hidden="true" class="modal fade" data-backdrop="static" id="loadingErrorSuccessPopup" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content all-radius">
+<div class="modal-header"><button class="close" data-dismiss="modal" type="button">×</button></div>
+
+<div class="modal-body">
+<div class="loadingContent"><img src="/assets/img/preloader.gif"/></div>
+
+<div class="successContent">
+<h5 class="title-blue">Başarılı</h5>
+
+<div class="center-start"><i><!--?xml version="1.0" encoding="UTF-8" ?--> <svg height="32px" version="1.1" viewBox="0 0 43 32" width="43px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs></defs> <g fill="none" fill-rule="evenodd" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"> <g stroke="#44B74F" stroke-width="2" transform="translate(-472.000000, -404.000000)"> <g transform="translate(433.000000, 292.000000)"> <polyline points="80.9900017 113 55.6091957 142.124475 40 127.454369"></polyline> </g> </g> </g> </svg> </i></div>
+</div>
+
+<div class="errorContent">
+<h5 class="title-blue">Hata</h5>
+
+<div class="center-start"><i><svg height="40px" version="1.1" viewBox="0 0 36 40" width="36px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs></defs> <g fill="none" fill-rule="evenodd" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"> <g stroke="#BA0000" stroke-width="2" transform="translate(-472.000000, -401.000000)"> <g transform="translate(433.000000, 292.000000)"> <g id="Group-11" transform="translate(40.000000, 110.000000)"> <path d="M33.7023523,0 L0.660830438,37.9151464"></path> <path d="M33.7023523,0 L0.660830438,37.9151464" transform="translate(17.181591, 18.957573) scale(-1, 1) translate(-17.181591, -18.957573) "></path> </g> </g> </g> </g> </svg> </i></div>
+</div>
+</div>
+
+<div class="modal-footer"> </div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="modal fade create-query" data-backdrop="static" data-keyboard="false" id="forgotpassword" role="dialog" tabindex="-1">
+<div class="modal-dialog forgotpassword">
+<div class="modal-content all-radius">
+<div class="modal-header"><button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+
+<div class="col-lg-8 com-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
+<h5 class="title-blue">Şifremi unuttum</h5>
+</div>
+</div>
+
+<div class="modal-body">
+<div class="col-lg-8 com-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
+<div class="text-center" id="div-call-center">
+<p>Parolanızı unuttuysanız, buradan sıfırlayabilirsiniz.</p>
+
+<div class="col-lg-12">
+<fieldset>
+<div class="form-group label-floating is-empty"><label class="control-label" for="tcnumber">Kayıtlı TC Numaranız</label> <input autocomplete="off" class="form-control all-radius input-lg" data-validate-type="tcnumber" id="tcnumber" maxlength="11" minlength="11" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" tabindex="1" type="number"/>
+<div class="tooltip-wrap"><a data-content="Geçerli bir T.C Numarası giriniz." data-toggle="popover"> <svg class="info" height="18" viewBox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <rect fill="#ee7d00" height="8" rx="1" width="2" x="8" y="6.878"></rect> <rect fill="#ee7d00" height="2" rx="1" width="2" x="8" y="2.981"></rect> <rect height="18" rx="4" stroke="#ee7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18"></rect> </g> </svg> </a></div>
+</div>
+
+<div class="form-group " style="display:none"><input class="form-control all-radius input-lg" id="gms-number" placeholder="Telefon Numarası" readonly="readonly" tabindex="2" type="text"/></div>
+
+<div class="form-group " style="display:none"><input class="form-control all-radius input-lg" id="input-email" placeholder="E-Posta Adresi" readonly="readonly" tabindex="3" type="text"/></div>
+<br/>
+<button class="btn btn-lg all-radius btn-block" id="btn-password-go" tabindex="4" type="button">Devam Et</button><button class="btn btn-lg all-radius btn-block" id="btn-reset-password-email" style="display:none" tabindex="5" type="button">E-Posta Adresime Gönder</button><button class="btn btn-lg all-radius btn-block" id="btn-reset-password-sms" style="display:none" tabindex="6" type="button">SMS ile Gönder</button><button class="btn btn-lg all-radius btn-block" id="btn-call-center" style="display:none" tabindex="7" type="button">Bilgiler Bana Ait Değil</button></fieldset>
+</div>
+</div>
+
+<div class="text-center" id="div-call-center-info" style="display:none">
+<p> </p>
+
+<h6>444 99 99</h6>
+Çağrı merkezini arayarak telefon numaranızı güncelleyebilirsiniz.
+
+<p> </p>
+
+<div class="col-lg-12">
+<fieldset><button class="btn btn-lg all-radius btn-block" id="btn-call-center-close" tabindex="8" type="button">Tamam</button></fieldset>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal-footer"> </div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="modal fade create-query" data-backdrop="static" data-keyboard="false" id="changepassword" role="dialog" tabindex="-1">
+<div class="modal-dialog forgotpassword">
+<div class="modal-content all-radius">
+<div class="modal-header">
+<div class="col-lg-8 com-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
+<h5 class="title-blue">Şifre Değiştirme</h5>
+</div>
+</div>
+
+<div class="modal-body">
+<div class="col-lg-8 com-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
+<div class="text-center">
+<div class="col-lg-12">
+<fieldset>
+<div class="form-group"><input autocomplete="new-password" class="form-control all-radius input-lg" data-validate-type="required" id="input-old-password" maxlength="8" minlength="6" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="Eski Şifre" type="password"/>
+<div class="tooltip-wrap"><a data-content="Eski şifrenizi giriniz." data-toggle="popover"> <svg class="info" height="18" viewBox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <rect fill="#ee7d00" height="8" rx="1" width="2" x="8" y="6.878"></rect> <rect fill="#ee7d00" height="2" rx="1" width="2" x="8" y="2.981"></rect> <rect height="18" rx="4" stroke="#ee7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18"></rect> </g> </svg> </a></div>
+</div>
+
+<div class="form-group"><input autocomplete="new-password" class="form-control all-radius input-lg" data-validate-type="required" id="input-new-password" maxlength="8" minlength="6" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="Yeni Şifre" type="password"/>
+<div class="tooltip-wrap"><a data-content="Şifreniz en az 6, en fazla 8 karakter olmalıdır.Şifreniz en az 2 rakam ve 4 harf içermelidir.Yeni şifreniz eski şifrenizden farklı olmalıdır." data-toggle="popover"> <svg class="info" height="18" viewBox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <rect fill="#ee7d00" height="8" rx="1" width="2" x="8" y="6.878"></rect> <rect fill="#ee7d00" height="2" rx="1" width="2" x="8" y="2.981"></rect> <rect height="18" rx="4" stroke="#ee7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18"></rect> </g> </svg> </a></div>
+</div>
+
+<div class="form-group"><input autocomplete="new-password" class="form-control all-radius input-lg" data-validate-type="required" id="input-new-password-re" maxlength="8" minlength="6" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="Yeni Şifre (Tekrar)" type="password"/>
+<div class="tooltip-wrap"><a data-content="Şifreniz en az 6, en fazla 8 karakter olmalıdır.Şifreniz en az 2 rakam ve 4 harf içermelidir.Yeni şifreniz eski şifrenizden farklı olmalıdır." data-toggle="popover"> <svg class="info" height="18" viewBox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <rect fill="#ee7d00" height="8" rx="1" width="2" x="8" y="6.878"></rect> <rect fill="#ee7d00" height="2" rx="1" width="2" x="8" y="2.981"></rect> <rect height="18" rx="4" stroke="#ee7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18"></rect> </g> </svg> </a></div>
+</div>
+<br/>
+<button class="btn btn-lg all-radius btn-block" id="btn-password-change" type="button">Kaydet</button></fieldset>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal-footer"> </div>
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+<div class="container-wrap-content">
+<div class="space left"> </div>
+
+<div class="middle">
+<div class="row footer-bottom">
+<div class="col-lg-6 col-md-8 col-sm-10 copyright-wrap">
+<div class="copyright"><img alt="arikanli-holding" height="39" src="/assets/img/arikanli-holding.svg" width="150"/></div>
+</div>
+</div>
+</div>
+
+<div class="space right"> </div>
+</div>
+</footer>
+</div>
+<script src="/Scripts/jquery.min.js">
+    </script><script src="/Scripts/bootstrap.min.js">
+    </script><script src="/Scripts/owl.carousel.js">
+    </script><script src="/Scripts/service/service.js?v=14">
+    </script><script src="/Scripts/page/main.js?v=14">
+    </script><script src="/Scripts/css-browser-selector.js">
+    </script><script src="/Scripts/lodash.min.js">
+    </script><script src="/Scripts/resource/language-resource.js">
+    </script><script src="/Scripts/page/login.js?v=14">
+    </script><script src="/Scripts/bootstrap-datepicker.js">
+    </script><script src="/Scripts/bootstrap-datepicker.tr.js" charset="UTF-8">
+    </script><script src="/Scripts/jquery.maskedinput.js" charset="UTF-8">
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-119024172-2">
+    </script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119024172-2');
+    </script>
+
+</body></html>
